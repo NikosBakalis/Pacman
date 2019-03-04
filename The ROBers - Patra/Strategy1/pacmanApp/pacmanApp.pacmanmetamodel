@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="ASCII"?>
+<pacmanMetamodel:PacmanApp xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pacmanMetamodel="platform:/plugin/PacmanMetamodel/model/pacmanMetamodel.ecore" participantName="The ROBers">
+  <hasState xsi:type="pacmanMetamodel:BonusAcquisition" name="Go for bonus!">
+    <hasBehavior xsi:type="pacmanMetamodel:OpponentDistance" importance="HIGH" id="256"/>
+    <hasBehavior xsi:type="pacmanMetamodel:EscapeRoutes" importance="LOW" id="257" searchDepth="3"/>
+    <hasBehavior xsi:type="pacmanMetamodel:CardDistance" id="258"/>
+    <hasTransition hasNextRobotState="//@hasState.1" id="546">
+      <hasConditionGroup evaluationType="OR" id="291">
+        <hasCondition id="810">
+          <hasOperand xsi:type="pacmanMetamodel:GameVariable" variable="UNTAKEN_BONUS"/>
+          <hasOperand xsi:type="pacmanMetamodel:Value" type="RIGHT" value="1.0"/>
+        </hasCondition>
+        <hasCondition operator="LOWER" id="811">
+          <hasOperand xsi:type="pacmanMetamodel:GameVariable"/>
+          <hasOperand xsi:type="pacmanMetamodel:Value" type="RIGHT" value="80.0"/>
+        </hasCondition>
+      </hasConditionGroup>
+    </hasTransition>
+    <hasTransition hasNextRobotState="//@hasState.2" id="547">
+      <hasConditionGroup id="292">
+        <hasCondition operator="GREATER" id="812">
+          <hasOperand xsi:type="pacmanMetamodel:GameVariable" variable="MY_BONUS"/>
+          <hasOperand xsi:type="pacmanMetamodel:Value" type="RIGHT"/>
+        </hasCondition>
+        <hasCondition operator="LOWER_OR_EQUAL" id="813">
+          <hasOperand xsi:type="pacmanMetamodel:GameVariable" variable="DIST_TO_OPP"/>
+          <hasOperand xsi:type="pacmanMetamodel:Value" type="RIGHT" value="5.0"/>
+        </hasCondition>
+      </hasConditionGroup>
+    </hasTransition>
+    <hasTransition hasNextRobotState="//@hasState.1" id="548">
+      <hasCondition id="814">
+        <hasOperand xsi:type="pacmanMetamodel:GameVariable" variable="UNTAKEN_BONUS"/>
+        <hasOperand xsi:type="pacmanMetamodel:Value" type="RIGHT"/>
+      </hasCondition>
+    </hasTransition>
+  </hasState>
+  <hasState xsi:type="pacmanMetamodel:Wandering" name="Wandering" id="1">
+    <hasBehavior xsi:type="pacmanMetamodel:OpponentDistance" importance="HIGH" id="259"/>
+    <hasBehavior xsi:type="pacmanMetamodel:EscapeRoutes" id="260" searchDepth="3"/>
+    <hasTransition hasNextRobotState="//@hasState.2" id="549">
+      <hasConditionGroup id="293">
+        <hasCondition operator="LOWER_OR_EQUAL" id="815">
+          <hasOperand xsi:type="pacmanMetamodel:GameVariable" variable="DIST_TO_OPP"/>
+          <hasOperand xsi:type="pacmanMetamodel:Value" type="RIGHT" value="5.0"/>
+        </hasCondition>
+        <hasCondition operator="GREATER_OR_EQUAL" id="817">
+          <hasOperand xsi:type="pacmanMetamodel:GameVariable" variable="MY_BONUS"/>
+          <hasOperand xsi:type="pacmanMetamodel:Value" type="RIGHT"/>
+        </hasCondition>
+      </hasConditionGroup>
+    </hasTransition>
+    <hasTransition hasNextRobotState="//@hasState.3" id="550">
+      <hasConditionGroup id="294">
+        <hasCondition operator="LOWER_OR_EQUAL" id="818">
+          <hasOperand xsi:type="pacmanMetamodel:GameVariable" variable="DIST_TO_CLOSEST_POINTS"/>
+          <hasOperand xsi:type="pacmanMetamodel:Value" type="RIGHT" value="3.0"/>
+        </hasCondition>
+        <hasCondition operator="GREATER_OR_EQUAL" id="819">
+          <hasOperand xsi:type="pacmanMetamodel:GameVariable" variable="DIST_TO_OPP"/>
+          <hasOperand xsi:type="pacmanMetamodel:Value" type="RIGHT" value="7.0"/>
+        </hasCondition>
+      </hasConditionGroup>
+    </hasTransition>
+    <hasTransition hasNextRobotState="//@hasState.4" id="551">
+      <hasConditionGroup id="295">
+        <hasCondition operator="LOWER_OR_EQUAL" id="820">
+          <hasOperand xsi:type="pacmanMetamodel:GameVariable" variable="DIST_TO_CLOSEST_BONUS"/>
+          <hasOperand xsi:type="pacmanMetamodel:Value" type="RIGHT" value="2.0"/>
+        </hasCondition>
+        <hasCondition operator="GREATER_OR_EQUAL" id="821">
+          <hasOperand xsi:type="pacmanMetamodel:GameVariable" variable="DIST_TO_OPP"/>
+          <hasOperand xsi:type="pacmanMetamodel:Value" type="RIGHT" value="7.0"/>
+        </hasCondition>
+      </hasConditionGroup>
+    </hasTransition>
+    <hasTransition hasNextRobotState="//@hasState.5" id="552">
+      <hasConditionGroup id="296">
+        <hasCondition operator="GREATER_OR_EQUAL" id="822">
+          <hasOperand xsi:type="pacmanMetamodel:GameVariable" variable="MY_BONUS"/>
+          <hasOperand xsi:type="pacmanMetamodel:Value" type="RIGHT" value="6.0"/>
+        </hasCondition>
+        <hasCondition operator="LOWER" id="823">
+          <hasOperand xsi:type="pacmanMetamodel:GameVariable"/>
+          <hasOperand xsi:type="pacmanMetamodel:Value" type="RIGHT" value="40.0"/>
+        </hasCondition>
+      </hasConditionGroup>
+    </hasTransition>
+    <hasTransition hasNextRobotState="//@hasState.6" id="553">
+      <hasConditionGroup id="297">
+        <hasCondition operator="LOWER_OR_EQUAL" id="824">
+          <hasOperand xsi:type="pacmanMetamodel:GameVariable" variable="MY_BONUS"/>
+          <hasOperand xsi:type="pacmanMetamodel:Value" type="RIGHT" value="5.0"/>
+        </hasCondition>
+        <hasCondition operator="LOWER" id="825">
+          <hasOperand xsi:type="pacmanMetamodel:GameVariable"/>
+          <hasOperand xsi:type="pacmanMetamodel:Value" type="RIGHT" value="40.0"/>
+        </hasCondition>
+      </hasConditionGroup>
+    </hasTransition>
+  </hasState>
+  <hasState xsi:type="pacmanMetamodel:EnemyImmobilization" name="Ghost stands still: 5sec" id="2">
+    <hasTransition hasNextRobotState="//@hasState.1" id="554">
+      <hasCondition operator="LOWER" id="826">
+        <hasOperand xsi:type="pacmanMetamodel:GameVariable"/>
+        <hasOperand xsi:type="pacmanMetamodel:Value" type="RIGHT" value="80.0"/>
+      </hasCondition>
+    </hasTransition>
+    <hasTransition hasNextRobotState="//@hasState.0" id="555">
+      <hasCondition operator="GREATER_OR_EQUAL" id="827">
+        <hasOperand xsi:type="pacmanMetamodel:GameVariable"/>
+        <hasOperand xsi:type="pacmanMetamodel:Value" type="RIGHT" value="80.0"/>
+      </hasCondition>
+    </hasTransition>
+    <hasTransition hasNextRobotState="//@hasState.1" id="556">
+      <hasConditionGroup id="298">
+        <hasCondition operator="LOWER" id="828">
+          <hasOperand xsi:type="pacmanMetamodel:GameVariable"/>
+          <hasOperand xsi:type="pacmanMetamodel:Value" type="RIGHT" value="80.0"/>
+        </hasCondition>
+        <hasCondition operator="LOWER" id="829">
+          <hasOperand xsi:type="pacmanMetamodel:GameVariable" variable="MY_BONUS"/>
+          <hasOperand xsi:type="pacmanMetamodel:Value" type="RIGHT" value="1.0"/>
+        </hasCondition>
+      </hasConditionGroup>
+    </hasTransition>
+    <hasTransition hasNextRobotState="//@hasState.11" id="557">
+      <hasConditionGroup id="299">
+        <hasCondition operator="GREATER_OR_EQUAL" id="830">
+          <hasOperand xsi:type="pacmanMetamodel:GameVariable"/>
+          <hasOperand xsi:type="pacmanMetamodel:Value" type="RIGHT" value="80.0"/>
+        </hasCondition>
+        <hasCondition operator="LOWER" id="831">
+          <hasOperand xsi:type="pacmanMetamodel:GameVariable" variable="MY_BONUS"/>
+          <hasOperand xsi:type="pacmanMetamodel:Value" type="RIGHT" value="1.0"/>
+        </hasCondition>
+      </hasConditionGroup>
+    </hasTransition>
+  </hasState>
+  <hasState xsi:type="pacmanMetamodel:CardAcquisition" name="Go for points!" id="3">
+    <hasBehavior xsi:type="pacmanMetamodel:EscapeRoutes" id="261" searchDepth="3"/>
+    <hasBehavior xsi:type="pacmanMetamodel:OpponentDistance" importance="HIGH" id="262"/>
+    <hasTransition hasNextRobotState="//@hasState.1" id="558">
+      <hasConditionGroup id="300">
+        <hasCondition operator="GREATER" id="832">
+          <hasOperand xsi:type="pacmanMetamodel:GameVariable" variable="DIST_TO_CLOSEST_POINTS"/>
+          <hasOperand xsi:type="pacmanMetamodel:Value" type="RIGHT" value="3.0"/>
+        </hasCondition>
+        <hasCondition operator="LOWER" id="833">
+          <hasOperand xsi:type="pacmanMetamodel:GameVariable" variable="DIST_TO_OPP"/>
+          <hasOperand xsi:type="pacmanMetamodel:Value" type="RIGHT" value="7.0"/>
+        </hasCondition>
+      </hasConditionGroup>
+    </hasTransition>
+  </hasState>
+  <hasState xsi:type="pacmanMetamodel:BonusAcquisition" name="Go for bonus!" id="4">
+    <hasBehavior xsi:type="pacmanMetamodel:EscapeRoutes" id="263" searchDepth="3"/>
+    <hasBehavior xsi:type="pacmanMetamodel:OpponentDistance" importance="HIGH" id="264"/>
+    <hasTransition hasNextRobotState="//@hasState.1" id="559">
+      <hasConditionGroup evaluationType="OR" id="301">
+        <hasCondition operator="GREATER_OR_EQUAL" id="834">
+          <hasOperand xsi:type="pacmanMetamodel:GameVariable" variable="DIST_TO_CLOSEST_BONUS"/>
+          <hasOperand xsi:type="pacmanMetamodel:Value" type="RIGHT" value="3.0"/>
+        </hasCondition>
+        <hasCondition operator="LOWER" id="835">
+          <hasOperand xsi:type="pacmanMetamodel:GameVariable" variable="DIST_TO_OPP"/>
+          <hasOperand xsi:type="pacmanMetamodel:Value" type="RIGHT" value="7.0"/>
+        </hasCondition>
+      </hasConditionGroup>
+    </hasTransition>
+    <hasTransition hasNextRobotState="//@hasState.1" id="560">
+      <hasCondition id="836">
+        <hasOperand xsi:type="pacmanMetamodel:GameVariable" variable="UNTAKEN_BONUS"/>
+        <hasOperand xsi:type="pacmanMetamodel:Value" type="RIGHT"/>
+      </hasCondition>
+    </hasTransition>
+  </hasState>
+  <hasState xsi:type="pacmanMetamodel:RoundTermination" name="Ending Round" id="5"/>
+  <hasState xsi:type="pacmanMetamodel:ScoreMultiplication" name="Score x2" id="6" type="QUINTUPLE_POINTS">
+    <hasTransition hasNextRobotState="//@hasState.7" id="561">
+      <hasConditionGroup id="302">
+        <hasCondition operator="LOWER_OR_EQUAL" id="837">
+          <hasOperand xsi:type="pacmanMetamodel:GameVariable" variable="MY_BONUS"/>
+          <hasOperand xsi:type="pacmanMetamodel:Value" type="RIGHT" value="4.0"/>
+        </hasCondition>
+        <hasCondition operator="LOWER" id="838">
+          <hasOperand xsi:type="pacmanMetamodel:GameVariable"/>
+          <hasOperand xsi:type="pacmanMetamodel:Value" type="RIGHT" value="40.0"/>
+        </hasCondition>
+      </hasConditionGroup>
+    </hasTransition>
+    <hasTransition hasNextRobotState="//@hasState.10" id="562">
+      <hasCondition operator="LOWER" id="839">
+        <hasOperand xsi:type="pacmanMetamodel:GameVariable" variable="MY_BONUS"/>
+        <hasOperand xsi:type="pacmanMetamodel:Value" type="RIGHT" value="5.0"/>
+      </hasCondition>
+    </hasTransition>
+  </hasState>
+  <hasState xsi:type="pacmanMetamodel:ScoreMultiplication" name="Score x2" id="7" type="QUADRUPLE_POINTS">
+    <hasTransition hasNextRobotState="//@hasState.8" id="563">
+      <hasConditionGroup id="303">
+        <hasCondition operator="LOWER_OR_EQUAL" id="840">
+          <hasOperand xsi:type="pacmanMetamodel:GameVariable" variable="MY_BONUS"/>
+          <hasOperand xsi:type="pacmanMetamodel:Value" type="RIGHT" value="3.0"/>
+        </hasCondition>
+        <hasCondition operator="LOWER" id="841">
+          <hasOperand xsi:type="pacmanMetamodel:GameVariable"/>
+          <hasOperand xsi:type="pacmanMetamodel:Value" type="RIGHT" value="40.0"/>
+        </hasCondition>
+      </hasConditionGroup>
+    </hasTransition>
+    <hasTransition hasNextRobotState="//@hasState.10" id="564">
+      <hasCondition operator="LOWER" id="842">
+        <hasOperand xsi:type="pacmanMetamodel:GameVariable" variable="MY_BONUS"/>
+        <hasOperand xsi:type="pacmanMetamodel:Value" type="RIGHT" value="4.0"/>
+      </hasCondition>
+    </hasTransition>
+  </hasState>
+  <hasState xsi:type="pacmanMetamodel:ScoreMultiplication" name="Score x2" id="8" type="TRIPLE_POINTS">
+    <hasTransition hasNextRobotState="//@hasState.9" id="565">
+      <hasConditionGroup id="304">
+        <hasCondition operator="LOWER_OR_EQUAL" id="843">
+          <hasOperand xsi:type="pacmanMetamodel:GameVariable" variable="MY_BONUS"/>
+          <hasOperand xsi:type="pacmanMetamodel:Value" type="RIGHT" value="2.0"/>
+        </hasCondition>
+        <hasCondition operator="LOWER" id="844">
+          <hasOperand xsi:type="pacmanMetamodel:GameVariable"/>
+          <hasOperand xsi:type="pacmanMetamodel:Value" type="RIGHT" value="40.0"/>
+        </hasCondition>
+      </hasConditionGroup>
+    </hasTransition>
+    <hasTransition hasNextRobotState="//@hasState.10" id="566">
+      <hasCondition operator="LOWER" id="845">
+        <hasOperand xsi:type="pacmanMetamodel:GameVariable" variable="MY_BONUS"/>
+        <hasOperand xsi:type="pacmanMetamodel:Value" type="RIGHT" value="3.0"/>
+      </hasCondition>
+    </hasTransition>
+  </hasState>
+  <hasState xsi:type="pacmanMetamodel:ScoreMultiplication" name="Score x2" id="9">
+    <hasTransition hasNextRobotState="//@hasState.10" id="567">
+      <hasCondition operator="LOWER" id="846">
+        <hasOperand xsi:type="pacmanMetamodel:GameVariable" variable="MY_BONUS"/>
+        <hasOperand xsi:type="pacmanMetamodel:Value" type="RIGHT" value="2.0"/>
+      </hasCondition>
+    </hasTransition>
+  </hasState>
+  <hasState xsi:type="pacmanMetamodel:CardAcquisition" name="Go for points!" id="10">
+    <hasBehavior xsi:type="pacmanMetamodel:CardDistance" importance="HIGH" id="265"/>
+    <hasBehavior xsi:type="pacmanMetamodel:OpponentDistance" id="266"/>
+  </hasState>
+  <hasState xsi:type="pacmanMetamodel:Wandering" name="Wandering" id="11">
+    <hasBehavior xsi:type="pacmanMetamodel:OpponentDistance" id="267"/>
+    <hasTransition hasNextRobotState="//@hasState.0" id="568">
+      <hasCondition operator="GREATER" id="847">
+        <hasOperand xsi:type="pacmanMetamodel:GameVariable" variable="DIST_TO_OPP"/>
+        <hasOperand xsi:type="pacmanMetamodel:Value" type="RIGHT" value="5.0"/>
+      </hasCondition>
+    </hasTransition>
+  </hasState>
+  <hasState xsi:type="pacmanMetamodel:Start" name="Starting State" id="18">
+    <hasTransition hasNextRobotState="//@hasState.0" id="579"/>
+  </hasState>
+</pacmanMetamodel:PacmanApp>

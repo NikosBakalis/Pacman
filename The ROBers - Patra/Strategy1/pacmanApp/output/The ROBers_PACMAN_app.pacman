@@ -1,0 +1,762 @@
+#!/usr/bin/python2
+# -*- coding: utf-8 -*-
+
+import sys
+import os
+import time
+
+dir_path = os.path.dirname(os.path.realpath(__file__))
+
+sys.path.append(dir_path + '/utilities')
+sys.path.append(dir_path + '/networking')
+sys.path.append(dir_path + '/base')
+sys.path.append(dir_path + '/robotBehaviors')
+sys.path.append(dir_path + '/robotStates')
+sys.path.append(dir_path + '/logic')
+sys.path.append(dir_path + '/datatype')
+
+# Base classes
+from RobotStateBase import RobotStateBase
+
+# Other libraries
+from amqp_common import RpcServer
+
+# Networking
+from sf_connectivity import SFConnectivity
+from orchestrator_rpc_clients import OrchestratorAPI
+
+# RobotStates
+from Constants import *
+
+# Transition Logic
+from Transition import Transition
+from Condition import Condition
+from ConditionGroup import ConditionGroup
+
+# Custom datatypes
+from GameVariable import GameVariable
+
+from BonusAcquisition import BonusAcquisition
+from CardAcquisition import CardAcquisition
+from EnemyCapture import EnemyCapture
+from EnemyImmobilization import EnemyImmobilization
+from RoundTermination import RoundTermination
+from ScoreMultiplication import ScoreMultiplication
+from Wandering import Wandering
+
+# RobotBehaviors
+from BonusDistanceBehavior import BonusDistanceBehavior
+from CardDistanceBehavior import CardDistanceBehavior
+from EscapeRoutesBehavior import EscapeRoutesBehavior
+from OpponentDistanceBehavior import OpponentDistanceBehavior
+
+class PacmanApp:
+
+	def __init__(self):
+		#initialize app status as false
+		self.appStatusReady = False
+
+		#initialize orchestrator API
+		self.orch_rpc_api = OrchestratorAPI()
+
+		#set up app callbacks
+		self.creds = SFConnectivity.APP1_CREDS
+		self.conn_params = SFConnectivity.DEFAULT_CONNECTIVITY
+
+		self.play_server = RpcServer(
+			'application_1.play',
+			on_request = self.play,
+			connection_params = self.conn_params,
+			creds = self.creds
+		)
+		self.ready_server = RpcServer(
+			'application_1.ready',
+			on_request = self.ready,
+			connection_params = self.conn_params,
+			creds = self.creds
+		)
+
+		self.play_server.run_threaded()
+		self.ready_server.run_threaded()
+
+		# the type of the player e.g ghost or pacman
+		self.playerType = PlayerType.PACMAN
+
+		# declare robot state with id 0
+		robotState0 = BonusAcquisition(PlayerType.PACMAN, self.orch_rpc_api)
+
+		# declare the behaviors of robot state with id 0
+		robotBehavior0_256 = OpponentDistanceBehavior()
+		robotBehavior0_256.setParameters(ImportanceType.HIGH, OpponentDistanceType.MAX, self.playerType)
+		# declare the behaviors of robot state with id 0
+		robotBehavior0_257 = EscapeRoutesBehavior()
+		robotBehavior0_257.setParameters(ImportanceType.LOW, 3, self.playerType)
+		# declare the behaviors of robot state with id 0
+		robotBehavior0_258 = CardDistanceBehavior()
+		robotBehavior0_258.setParameters(ImportanceType.NORMAL, CardDistanceType.TO_CLOSEST_POINTS, self.playerType)
+
+		# initialize robot state with id 0 with its behaviors
+		robotState0.setBehaviors([robotBehavior0_256, robotBehavior0_257, robotBehavior0_258])
+		# declare robot state with id 1
+		robotState1 = Wandering(PlayerType.PACMAN, self.orch_rpc_api)
+
+		# declare the behaviors of robot state with id 1
+		robotBehavior1_259 = OpponentDistanceBehavior()
+		robotBehavior1_259.setParameters(ImportanceType.HIGH, OpponentDistanceType.MAX, self.playerType)
+		# declare the behaviors of robot state with id 1
+		robotBehavior1_260 = EscapeRoutesBehavior()
+		robotBehavior1_260.setParameters(ImportanceType.NORMAL, 3, self.playerType)
+
+		# initialize robot state with id 1 with its behaviors
+		robotState1.setBehaviors([robotBehavior1_259, robotBehavior1_260])
+		# declare robot state with id 2
+		robotState2 = EnemyImmobilization(PlayerType.PACMAN, ImmobilizationOptions.FIVE_SECONDS, self.orch_rpc_api)
+
+
+		# initialize robot state with id 2 with its behaviors
+		robotState2.setBehaviors([])
+		# declare robot state with id 3
+		robotState3 = CardAcquisition(PlayerType.PACMAN, self.orch_rpc_api)
+
+		# declare the behaviors of robot state with id 3
+		robotBehavior3_261 = EscapeRoutesBehavior()
+		robotBehavior3_261.setParameters(ImportanceType.NORMAL, 3, self.playerType)
+		# declare the behaviors of robot state with id 3
+		robotBehavior3_262 = OpponentDistanceBehavior()
+		robotBehavior3_262.setParameters(ImportanceType.HIGH, OpponentDistanceType.MAX, self.playerType)
+
+		# initialize robot state with id 3 with its behaviors
+		robotState3.setBehaviors([robotBehavior3_261, robotBehavior3_262])
+		# declare robot state with id 4
+		robotState4 = BonusAcquisition(PlayerType.PACMAN, self.orch_rpc_api)
+
+		# declare the behaviors of robot state with id 4
+		robotBehavior4_263 = EscapeRoutesBehavior()
+		robotBehavior4_263.setParameters(ImportanceType.NORMAL, 3, self.playerType)
+		# declare the behaviors of robot state with id 4
+		robotBehavior4_264 = OpponentDistanceBehavior()
+		robotBehavior4_264.setParameters(ImportanceType.HIGH, OpponentDistanceType.MAX, self.playerType)
+
+		# initialize robot state with id 4 with its behaviors
+		robotState4.setBehaviors([robotBehavior4_263, robotBehavior4_264])
+		# declare robot state with id 5
+		robotState5 = RoundTermination(PlayerType.PACMAN, self.orch_rpc_api)
+
+
+		# initialize robot state with id 5 with its behaviors
+		robotState5.setBehaviors([])
+		# declare robot state with id 6
+		robotState6 = ScoreMultiplication(PlayerType.PACMAN, ScoreMultiplicationOptions.QUINTUPLE_POINTS, self.orch_rpc_api)
+
+
+		# initialize robot state with id 6 with its behaviors
+		robotState6.setBehaviors([])
+		# declare robot state with id 7
+		robotState7 = ScoreMultiplication(PlayerType.PACMAN, ScoreMultiplicationOptions.QUADRUPLE_POINTS, self.orch_rpc_api)
+
+
+		# initialize robot state with id 7 with its behaviors
+		robotState7.setBehaviors([])
+		# declare robot state with id 8
+		robotState8 = ScoreMultiplication(PlayerType.PACMAN, ScoreMultiplicationOptions.TRIPLE_POINTS, self.orch_rpc_api)
+
+
+		# initialize robot state with id 8 with its behaviors
+		robotState8.setBehaviors([])
+		# declare robot state with id 9
+		robotState9 = ScoreMultiplication(PlayerType.PACMAN, ScoreMultiplicationOptions.DOUBLE_POINTS, self.orch_rpc_api)
+
+
+		# initialize robot state with id 9 with its behaviors
+		robotState9.setBehaviors([])
+		# declare robot state with id 10
+		robotState10 = CardAcquisition(PlayerType.PACMAN, self.orch_rpc_api)
+
+		# declare the behaviors of robot state with id 10
+		robotBehavior10_265 = CardDistanceBehavior()
+		robotBehavior10_265.setParameters(ImportanceType.HIGH, CardDistanceType.TO_CLOSEST_POINTS, self.playerType)
+		# declare the behaviors of robot state with id 10
+		robotBehavior10_266 = OpponentDistanceBehavior()
+		robotBehavior10_266.setParameters(ImportanceType.NORMAL, OpponentDistanceType.MAX, self.playerType)
+
+		# initialize robot state with id 10 with its behaviors
+		robotState10.setBehaviors([robotBehavior10_265, robotBehavior10_266])
+		# declare robot state with id 11
+		robotState11 = Wandering(PlayerType.PACMAN, self.orch_rpc_api)
+
+		# declare the behaviors of robot state with id 11
+		robotBehavior11_267 = OpponentDistanceBehavior()
+		robotBehavior11_267.setParameters(ImportanceType.NORMAL, OpponentDistanceType.MAX, self.playerType)
+
+		# initialize robot state with id 11 with its behaviors
+		robotState11.setBehaviors([robotBehavior11_267])
+		# declare robot state with id 12
+		robotState12 = Wandering(PlayerType.PACMAN, self.orch_rpc_api)
+
+		# declare the behaviors of robot state with id 12
+		robotBehavior12_268 = BonusDistanceBehavior()
+		robotBehavior12_268.setParameters(ImportanceType.NORMAL, BonusDistanceType.TO_CLOSEST_BONUS, self.playerType)
+
+		# initialize robot state with id 12 with its behaviors
+		robotState12.setBehaviors([robotBehavior12_268])
+		# declare robot state with id 13
+		robotState13 = EnemyImmobilization(PlayerType.PACMAN, ImmobilizationOptions.FIVE_SECONDS, self.orch_rpc_api)
+
+
+		# initialize robot state with id 13 with its behaviors
+		robotState13.setBehaviors([])
+		# declare robot state with id 14
+		robotState14 = Wandering(PlayerType.PACMAN, self.orch_rpc_api)
+
+		# declare the behaviors of robot state with id 14
+		robotBehavior14_269 = CardDistanceBehavior()
+		robotBehavior14_269.setParameters(ImportanceType.NORMAL, CardDistanceType.TO_CLOSEST_POINTS, self.playerType)
+
+		# initialize robot state with id 14 with its behaviors
+		robotState14.setBehaviors([robotBehavior14_269])
+		# declare robot state with id 15
+		robotState15 = EnemyImmobilization(PlayerType.PACMAN, ImmobilizationOptions.FIVE_SECONDS, self.orch_rpc_api)
+
+
+		# initialize robot state with id 15 with its behaviors
+		robotState15.setBehaviors([])
+		# declare robot state with id 16
+		robotState16 = Wandering(PlayerType.PACMAN, self.orch_rpc_api)
+
+		# declare the behaviors of robot state with id 16
+		robotBehavior16_270 = OpponentDistanceBehavior()
+		robotBehavior16_270.setParameters(ImportanceType.NORMAL, OpponentDistanceType.MAX, self.playerType)
+
+		# initialize robot state with id 16 with its behaviors
+		robotState16.setBehaviors([robotBehavior16_270])
+		# declare robot state with id 17
+		robotState17 = Wandering(PlayerType.PACMAN, self.orch_rpc_api)
+
+		# declare the behaviors of robot state with id 17
+		robotBehavior17_271 = OpponentDistanceBehavior()
+		robotBehavior17_271.setParameters(ImportanceType.NORMAL, OpponentDistanceType.MAX, self.playerType)
+
+		# initialize robot state with id 17 with its behaviors
+		robotState17.setBehaviors([robotBehavior17_271])
+		# declare robot state with id 18
+		robotState18 = RobotStateBase(PlayerType.PACMAN, self.orch_rpc_api)
+		robotState18.setEverExecuted(True)
+
+
+		# initialize robot state with id 18 with its behaviors
+		robotState18.setBehaviors([])
+
+		# declare the Transitions of each state
+		transition546 = Transition(robotState1)
+		# declare the transition's condition group
+		conditionGroup546_291 = ConditionGroup(BooleanEvaluationType.OR, self.playerType)
+		conditions = []
+		# declare the condition group's conditions
+		condition546_810 = Condition(OperatorType.EQUAL, self.playerType, self.orch_rpc_api)
+		leftOp = GameVariable(GameVariableType.UNTAKEN_BONUS)
+		rightOp = 1.0
+		condition546_810.setOperands(leftOp, rightOp)
+		condition546_811 = Condition(OperatorType.LOWER, self.playerType, self.orch_rpc_api)
+		leftOp = GameVariable(GameVariableType.TIME)
+		rightOp = 80.0
+		condition546_811.setOperands(leftOp, rightOp)
+		conditionGroup546_291.setConditions([condition546_810, condition546_811])
+		transition546.setConditionGroup(conditionGroup546_291)
+		transition547 = Transition(robotState2)
+		# declare the transition's condition group
+		conditionGroup547_292 = ConditionGroup(BooleanEvaluationType.AND, self.playerType)
+		conditions = []
+		# declare the condition group's conditions
+		condition547_812 = Condition(OperatorType.GREATER, self.playerType, self.orch_rpc_api)
+		leftOp = GameVariable(GameVariableType.MY_BONUS)
+		rightOp = 0.0
+		condition547_812.setOperands(leftOp, rightOp)
+		condition547_813 = Condition(OperatorType.LOWER_OR_EQUAL, self.playerType, self.orch_rpc_api)
+		leftOp = GameVariable(GameVariableType.DIST_TO_OPP)
+		rightOp = 5.0
+		condition547_813.setOperands(leftOp, rightOp)
+		conditionGroup547_292.setConditions([condition547_812, condition547_813])
+		transition547.setConditionGroup(conditionGroup547_292)
+		transition548 = Transition(robotState1)
+		# declare the transition's condition
+		condition548_814 = Condition(OperatorType.EQUAL, self.playerType, self.orch_rpc_api)
+		leftOp = GameVariable(GameVariableType.UNTAKEN_BONUS)
+		rightOp = 0.0
+		condition548_814.setOperands(leftOp, rightOp)
+		transition548.setCondition(condition548_814)
+
+		#set state's transitions
+		robotState0.setTransitions([transition546, transition547, transition548])
+
+		transition549 = Transition(robotState2)
+		# declare the transition's condition group
+		conditionGroup549_293 = ConditionGroup(BooleanEvaluationType.AND, self.playerType)
+		conditions = []
+		# declare the condition group's conditions
+		condition549_815 = Condition(OperatorType.LOWER_OR_EQUAL, self.playerType, self.orch_rpc_api)
+		leftOp = GameVariable(GameVariableType.DIST_TO_OPP)
+		rightOp = 5.0
+		condition549_815.setOperands(leftOp, rightOp)
+		condition549_816 = Condition(OperatorType.GREATER_OR_EQUAL, self.playerType, self.orch_rpc_api)
+		leftOp = GameVariable(GameVariableType.MY_BONUS)
+		rightOp = GameVariable(GameVariableType.OPP_BONUS)
+		condition549_816.setOperands(leftOp, rightOp)
+		condition549_817 = Condition(OperatorType.GREATER_OR_EQUAL, self.playerType, self.orch_rpc_api)
+		leftOp = GameVariable(GameVariableType.MY_BONUS)
+		rightOp = 0.0
+		condition549_817.setOperands(leftOp, rightOp)
+		conditionGroup549_293.setConditions([condition549_815, condition549_816, condition549_817])
+		transition549.setConditionGroup(conditionGroup549_293)
+		transition550 = Transition(robotState3)
+		# declare the transition's condition group
+		conditionGroup550_294 = ConditionGroup(BooleanEvaluationType.AND, self.playerType)
+		conditions = []
+		# declare the condition group's conditions
+		condition550_818 = Condition(OperatorType.LOWER_OR_EQUAL, self.playerType, self.orch_rpc_api)
+		leftOp = GameVariable(GameVariableType.DIST_TO_CLOSEST_POINTS)
+		rightOp = 3.0
+		condition550_818.setOperands(leftOp, rightOp)
+		condition550_819 = Condition(OperatorType.GREATER_OR_EQUAL, self.playerType, self.orch_rpc_api)
+		leftOp = GameVariable(GameVariableType.DIST_TO_OPP)
+		rightOp = 7.0
+		condition550_819.setOperands(leftOp, rightOp)
+		conditionGroup550_294.setConditions([condition550_818, condition550_819])
+		transition550.setConditionGroup(conditionGroup550_294)
+		transition551 = Transition(robotState4)
+		# declare the transition's condition group
+		conditionGroup551_295 = ConditionGroup(BooleanEvaluationType.AND, self.playerType)
+		conditions = []
+		# declare the condition group's conditions
+		condition551_820 = Condition(OperatorType.LOWER_OR_EQUAL, self.playerType, self.orch_rpc_api)
+		leftOp = GameVariable(GameVariableType.DIST_TO_CLOSEST_BONUS)
+		rightOp = 2.0
+		condition551_820.setOperands(leftOp, rightOp)
+		condition551_821 = Condition(OperatorType.GREATER_OR_EQUAL, self.playerType, self.orch_rpc_api)
+		leftOp = GameVariable(GameVariableType.DIST_TO_OPP)
+		rightOp = 7.0
+		condition551_821.setOperands(leftOp, rightOp)
+		conditionGroup551_295.setConditions([condition551_820, condition551_821])
+		transition551.setConditionGroup(conditionGroup551_295)
+		transition552 = Transition(robotState5)
+		# declare the transition's condition group
+		conditionGroup552_296 = ConditionGroup(BooleanEvaluationType.AND, self.playerType)
+		conditions = []
+		# declare the condition group's conditions
+		condition552_822 = Condition(OperatorType.GREATER_OR_EQUAL, self.playerType, self.orch_rpc_api)
+		leftOp = GameVariable(GameVariableType.MY_BONUS)
+		rightOp = 6.0
+		condition552_822.setOperands(leftOp, rightOp)
+		condition552_823 = Condition(OperatorType.LOWER, self.playerType, self.orch_rpc_api)
+		leftOp = GameVariable(GameVariableType.TIME)
+		rightOp = 40.0
+		condition552_823.setOperands(leftOp, rightOp)
+		conditionGroup552_296.setConditions([condition552_822, condition552_823])
+		transition552.setConditionGroup(conditionGroup552_296)
+		transition553 = Transition(robotState6)
+		# declare the transition's condition group
+		conditionGroup553_297 = ConditionGroup(BooleanEvaluationType.AND, self.playerType)
+		conditions = []
+		# declare the condition group's conditions
+		condition553_824 = Condition(OperatorType.LOWER_OR_EQUAL, self.playerType, self.orch_rpc_api)
+		leftOp = GameVariable(GameVariableType.MY_BONUS)
+		rightOp = 5.0
+		condition553_824.setOperands(leftOp, rightOp)
+		condition553_825 = Condition(OperatorType.LOWER, self.playerType, self.orch_rpc_api)
+		leftOp = GameVariable(GameVariableType.TIME)
+		rightOp = 40.0
+		condition553_825.setOperands(leftOp, rightOp)
+		conditionGroup553_297.setConditions([condition553_824, condition553_825])
+		transition553.setConditionGroup(conditionGroup553_297)
+
+		#set state's transitions
+		robotState1.setTransitions([transition549, transition550, transition551, transition552, transition553])
+
+		transition554 = Transition(robotState1)
+		# declare the transition's condition
+		condition554_826 = Condition(OperatorType.LOWER, self.playerType, self.orch_rpc_api)
+		leftOp = GameVariable(GameVariableType.TIME)
+		rightOp = 80.0
+		condition554_826.setOperands(leftOp, rightOp)
+		transition554.setCondition(condition554_826)
+		transition555 = Transition(robotState0)
+		# declare the transition's condition
+		condition555_827 = Condition(OperatorType.GREATER_OR_EQUAL, self.playerType, self.orch_rpc_api)
+		leftOp = GameVariable(GameVariableType.TIME)
+		rightOp = 80.0
+		condition555_827.setOperands(leftOp, rightOp)
+		transition555.setCondition(condition555_827)
+		transition556 = Transition(robotState1)
+		# declare the transition's condition group
+		conditionGroup556_298 = ConditionGroup(BooleanEvaluationType.AND, self.playerType)
+		conditions = []
+		# declare the condition group's conditions
+		condition556_828 = Condition(OperatorType.LOWER, self.playerType, self.orch_rpc_api)
+		leftOp = GameVariable(GameVariableType.TIME)
+		rightOp = 80.0
+		condition556_828.setOperands(leftOp, rightOp)
+		condition556_829 = Condition(OperatorType.LOWER, self.playerType, self.orch_rpc_api)
+		leftOp = GameVariable(GameVariableType.MY_BONUS)
+		rightOp = 1.0
+		condition556_829.setOperands(leftOp, rightOp)
+		conditionGroup556_298.setConditions([condition556_828, condition556_829])
+		transition556.setConditionGroup(conditionGroup556_298)
+		transition557 = Transition(robotState11)
+		# declare the transition's condition group
+		conditionGroup557_299 = ConditionGroup(BooleanEvaluationType.AND, self.playerType)
+		conditions = []
+		# declare the condition group's conditions
+		condition557_830 = Condition(OperatorType.GREATER_OR_EQUAL, self.playerType, self.orch_rpc_api)
+		leftOp = GameVariable(GameVariableType.TIME)
+		rightOp = 80.0
+		condition557_830.setOperands(leftOp, rightOp)
+		condition557_831 = Condition(OperatorType.LOWER, self.playerType, self.orch_rpc_api)
+		leftOp = GameVariable(GameVariableType.MY_BONUS)
+		rightOp = 1.0
+		condition557_831.setOperands(leftOp, rightOp)
+		conditionGroup557_299.setConditions([condition557_830, condition557_831])
+		transition557.setConditionGroup(conditionGroup557_299)
+
+		#set state's transitions
+		robotState2.setTransitions([transition554, transition555, transition556, transition557])
+
+		transition558 = Transition(robotState1)
+		# declare the transition's condition group
+		conditionGroup558_300 = ConditionGroup(BooleanEvaluationType.AND, self.playerType)
+		conditions = []
+		# declare the condition group's conditions
+		condition558_832 = Condition(OperatorType.GREATER, self.playerType, self.orch_rpc_api)
+		leftOp = GameVariable(GameVariableType.DIST_TO_CLOSEST_POINTS)
+		rightOp = 3.0
+		condition558_832.setOperands(leftOp, rightOp)
+		condition558_833 = Condition(OperatorType.LOWER, self.playerType, self.orch_rpc_api)
+		leftOp = GameVariable(GameVariableType.DIST_TO_OPP)
+		rightOp = 7.0
+		condition558_833.setOperands(leftOp, rightOp)
+		conditionGroup558_300.setConditions([condition558_832, condition558_833])
+		transition558.setConditionGroup(conditionGroup558_300)
+
+		#set state's transitions
+		robotState3.setTransitions([transition558])
+
+		transition559 = Transition(robotState1)
+		# declare the transition's condition group
+		conditionGroup559_301 = ConditionGroup(BooleanEvaluationType.OR, self.playerType)
+		conditions = []
+		# declare the condition group's conditions
+		condition559_834 = Condition(OperatorType.GREATER_OR_EQUAL, self.playerType, self.orch_rpc_api)
+		leftOp = GameVariable(GameVariableType.DIST_TO_CLOSEST_BONUS)
+		rightOp = 3.0
+		condition559_834.setOperands(leftOp, rightOp)
+		condition559_835 = Condition(OperatorType.LOWER, self.playerType, self.orch_rpc_api)
+		leftOp = GameVariable(GameVariableType.DIST_TO_OPP)
+		rightOp = 7.0
+		condition559_835.setOperands(leftOp, rightOp)
+		conditionGroup559_301.setConditions([condition559_834, condition559_835])
+		transition559.setConditionGroup(conditionGroup559_301)
+		transition560 = Transition(robotState1)
+		# declare the transition's condition
+		condition560_836 = Condition(OperatorType.EQUAL, self.playerType, self.orch_rpc_api)
+		leftOp = GameVariable(GameVariableType.UNTAKEN_BONUS)
+		rightOp = 0.0
+		condition560_836.setOperands(leftOp, rightOp)
+		transition560.setCondition(condition560_836)
+
+		#set state's transitions
+		robotState4.setTransitions([transition559, transition560])
+
+
+		#set state's transitions
+		robotState5.setTransitions([])
+
+		transition561 = Transition(robotState7)
+		# declare the transition's condition group
+		conditionGroup561_302 = ConditionGroup(BooleanEvaluationType.AND, self.playerType)
+		conditions = []
+		# declare the condition group's conditions
+		condition561_837 = Condition(OperatorType.LOWER_OR_EQUAL, self.playerType, self.orch_rpc_api)
+		leftOp = GameVariable(GameVariableType.MY_BONUS)
+		rightOp = 4.0
+		condition561_837.setOperands(leftOp, rightOp)
+		condition561_838 = Condition(OperatorType.LOWER, self.playerType, self.orch_rpc_api)
+		leftOp = GameVariable(GameVariableType.TIME)
+		rightOp = 40.0
+		condition561_838.setOperands(leftOp, rightOp)
+		conditionGroup561_302.setConditions([condition561_837, condition561_838])
+		transition561.setConditionGroup(conditionGroup561_302)
+		transition562 = Transition(robotState10)
+		# declare the transition's condition
+		condition562_839 = Condition(OperatorType.LOWER, self.playerType, self.orch_rpc_api)
+		leftOp = GameVariable(GameVariableType.MY_BONUS)
+		rightOp = 5.0
+		condition562_839.setOperands(leftOp, rightOp)
+		transition562.setCondition(condition562_839)
+
+		#set state's transitions
+		robotState6.setTransitions([transition561, transition562])
+
+		transition563 = Transition(robotState8)
+		# declare the transition's condition group
+		conditionGroup563_303 = ConditionGroup(BooleanEvaluationType.AND, self.playerType)
+		conditions = []
+		# declare the condition group's conditions
+		condition563_840 = Condition(OperatorType.LOWER_OR_EQUAL, self.playerType, self.orch_rpc_api)
+		leftOp = GameVariable(GameVariableType.MY_BONUS)
+		rightOp = 3.0
+		condition563_840.setOperands(leftOp, rightOp)
+		condition563_841 = Condition(OperatorType.LOWER, self.playerType, self.orch_rpc_api)
+		leftOp = GameVariable(GameVariableType.TIME)
+		rightOp = 40.0
+		condition563_841.setOperands(leftOp, rightOp)
+		conditionGroup563_303.setConditions([condition563_840, condition563_841])
+		transition563.setConditionGroup(conditionGroup563_303)
+		transition564 = Transition(robotState10)
+		# declare the transition's condition
+		condition564_842 = Condition(OperatorType.LOWER, self.playerType, self.orch_rpc_api)
+		leftOp = GameVariable(GameVariableType.MY_BONUS)
+		rightOp = 4.0
+		condition564_842.setOperands(leftOp, rightOp)
+		transition564.setCondition(condition564_842)
+
+		#set state's transitions
+		robotState7.setTransitions([transition563, transition564])
+
+		transition565 = Transition(robotState9)
+		# declare the transition's condition group
+		conditionGroup565_304 = ConditionGroup(BooleanEvaluationType.AND, self.playerType)
+		conditions = []
+		# declare the condition group's conditions
+		condition565_843 = Condition(OperatorType.LOWER_OR_EQUAL, self.playerType, self.orch_rpc_api)
+		leftOp = GameVariable(GameVariableType.MY_BONUS)
+		rightOp = 2.0
+		condition565_843.setOperands(leftOp, rightOp)
+		condition565_844 = Condition(OperatorType.LOWER, self.playerType, self.orch_rpc_api)
+		leftOp = GameVariable(GameVariableType.TIME)
+		rightOp = 40.0
+		condition565_844.setOperands(leftOp, rightOp)
+		conditionGroup565_304.setConditions([condition565_843, condition565_844])
+		transition565.setConditionGroup(conditionGroup565_304)
+		transition566 = Transition(robotState10)
+		# declare the transition's condition
+		condition566_845 = Condition(OperatorType.LOWER, self.playerType, self.orch_rpc_api)
+		leftOp = GameVariable(GameVariableType.MY_BONUS)
+		rightOp = 3.0
+		condition566_845.setOperands(leftOp, rightOp)
+		transition566.setCondition(condition566_845)
+
+		#set state's transitions
+		robotState8.setTransitions([transition565, transition566])
+
+		transition567 = Transition(robotState10)
+		# declare the transition's condition
+		condition567_846 = Condition(OperatorType.LOWER, self.playerType, self.orch_rpc_api)
+		leftOp = GameVariable(GameVariableType.MY_BONUS)
+		rightOp = 2.0
+		condition567_846.setOperands(leftOp, rightOp)
+		transition567.setCondition(condition567_846)
+
+		#set state's transitions
+		robotState9.setTransitions([transition567])
+
+
+		#set state's transitions
+		robotState10.setTransitions([])
+
+		transition568 = Transition(robotState0)
+		# declare the transition's condition
+		condition568_847 = Condition(OperatorType.GREATER, self.playerType, self.orch_rpc_api)
+		leftOp = GameVariable(GameVariableType.DIST_TO_OPP)
+		rightOp = 5.0
+		condition568_847.setOperands(leftOp, rightOp)
+		transition568.setCondition(condition568_847)
+
+		#set state's transitions
+		robotState11.setTransitions([transition568])
+
+		transition569 = Transition(robotState13)
+		# declare the transition's condition group
+		conditionGroup569_305 = ConditionGroup(BooleanEvaluationType.AND, self.playerType)
+		conditions = []
+		# declare the condition group's conditions
+		condition569_848 = Condition(OperatorType.GREATER, self.playerType, self.orch_rpc_api)
+		leftOp = GameVariable(GameVariableType.MY_BONUS)
+		rightOp = 0.0
+		condition569_848.setOperands(leftOp, rightOp)
+		condition569_849 = Condition(OperatorType.LOWER_OR_EQUAL, self.playerType, self.orch_rpc_api)
+		leftOp = GameVariable(GameVariableType.DIST_TO_OPP)
+		rightOp = 5.0
+		condition569_849.setOperands(leftOp, rightOp)
+		conditionGroup569_305.setConditions([condition569_848, condition569_849])
+		transition569.setConditionGroup(conditionGroup569_305)
+		transition570 = Transition(robotState14)
+		# declare the transition's condition
+		condition570_850 = Condition(OperatorType.LOWER, self.playerType, self.orch_rpc_api)
+		leftOp = GameVariable(GameVariableType.TIME)
+		rightOp = 80.0
+		condition570_850.setOperands(leftOp, rightOp)
+		transition570.setCondition(condition570_850)
+		transition571 = Transition(robotState14)
+		# declare the transition's condition
+		condition571_851 = Condition(OperatorType.EQUAL, self.playerType, self.orch_rpc_api)
+		leftOp = GameVariable(GameVariableType.UNTAKEN_BONUS)
+		rightOp = 0.0
+		condition571_851.setOperands(leftOp, rightOp)
+		transition571.setCondition(condition571_851)
+
+		#set state's transitions
+		robotState12.setTransitions([transition569, transition570, transition571])
+
+		transition572 = Transition(robotState16)
+
+		#set state's transitions
+		robotState13.setTransitions([transition572])
+
+		transition573 = Transition(robotState15)
+		# declare the transition's condition group
+		conditionGroup573_306 = ConditionGroup(BooleanEvaluationType.AND, self.playerType)
+		conditions = []
+		# declare the condition group's conditions
+		condition573_852 = Condition(OperatorType.GREATER, self.playerType, self.orch_rpc_api)
+		leftOp = GameVariable(GameVariableType.MY_BONUS)
+		rightOp = 0.0
+		condition573_852.setOperands(leftOp, rightOp)
+		condition573_853 = Condition(OperatorType.LOWER_OR_EQUAL, self.playerType, self.orch_rpc_api)
+		leftOp = GameVariable(GameVariableType.DIST_TO_OPP)
+		rightOp = 5.0
+		condition573_853.setOperands(leftOp, rightOp)
+		conditionGroup573_306.setConditions([condition573_852, condition573_853])
+		transition573.setConditionGroup(conditionGroup573_306)
+
+		#set state's transitions
+		robotState14.setTransitions([transition573])
+
+		transition574 = Transition(robotState17)
+
+		#set state's transitions
+		robotState15.setTransitions([transition574])
+
+		transition575 = Transition(robotState13)
+		# declare the transition's condition group
+		conditionGroup575_307 = ConditionGroup(BooleanEvaluationType.AND, self.playerType)
+		conditions = []
+		# declare the condition group's conditions
+		condition575_854 = Condition(OperatorType.GREATER, self.playerType, self.orch_rpc_api)
+		leftOp = GameVariable(GameVariableType.MY_BONUS)
+		rightOp = 0.0
+		condition575_854.setOperands(leftOp, rightOp)
+		condition575_855 = Condition(OperatorType.LOWER_OR_EQUAL, self.playerType, self.orch_rpc_api)
+		leftOp = GameVariable(GameVariableType.DIST_TO_OPP)
+		rightOp = 5.0
+		condition575_855.setOperands(leftOp, rightOp)
+		conditionGroup575_307.setConditions([condition575_854, condition575_855])
+		transition575.setConditionGroup(conditionGroup575_307)
+		transition576 = Transition(robotState12)
+		# declare the transition's condition
+		condition576_856 = Condition(OperatorType.GREATER, self.playerType, self.orch_rpc_api)
+		leftOp = GameVariable(GameVariableType.DIST_TO_OPP)
+		rightOp = 5.0
+		condition576_856.setOperands(leftOp, rightOp)
+		transition576.setCondition(condition576_856)
+
+		#set state's transitions
+		robotState16.setTransitions([transition575, transition576])
+
+		transition577 = Transition(robotState15)
+		# declare the transition's condition group
+		conditionGroup577_308 = ConditionGroup(BooleanEvaluationType.AND, self.playerType)
+		conditions = []
+		# declare the condition group's conditions
+		condition577_857 = Condition(OperatorType.GREATER, self.playerType, self.orch_rpc_api)
+		leftOp = GameVariable(GameVariableType.MY_BONUS)
+		rightOp = 0.0
+		condition577_857.setOperands(leftOp, rightOp)
+		condition577_858 = Condition(OperatorType.LOWER_OR_EQUAL, self.playerType, self.orch_rpc_api)
+		leftOp = GameVariable(GameVariableType.DIST_TO_OPP)
+		rightOp = 5.0
+		condition577_858.setOperands(leftOp, rightOp)
+		conditionGroup577_308.setConditions([condition577_857, condition577_858])
+		transition577.setConditionGroup(conditionGroup577_308)
+		transition578 = Transition(robotState14)
+		# declare the transition's condition
+		condition578_859 = Condition(OperatorType.GREATER, self.playerType, self.orch_rpc_api)
+		leftOp = GameVariable(GameVariableType.DIST_TO_OPP)
+		rightOp = 5.0
+		condition578_859.setOperands(leftOp, rightOp)
+		transition578.setCondition(condition578_859)
+
+		#set state's transitions
+		robotState17.setTransitions([transition577, transition578])
+
+		transition579 = Transition(robotState0)
+
+		#set state's transitions
+		robotState18.setTransitions([transition579])
+
+
+		#set initial robot state
+		self.currentRobotState = robotState18
+
+		#set app status to ready
+		self.appStatusReady = True
+
+
+	#callback functionality
+
+	#callback to get the status of the app
+	def ready(self, msg, meta):
+		return {"ready": self.appStatusReady, "name": 'The ROBers'}
+
+	#callback to instruct the app to play the next move
+	def play(self, msg, meta):
+
+		#check if the current state has not yet been executed even once
+		if self.currentRobotState.everExecuted() == False:
+			self.executeCurrentState()
+
+		#check if a transition of the current state is eligible for execution
+		elif self.currentRobotState.checkForEligibleTransition() == True:
+			self.currentRobotState = self.currentRobotState.getNextEligibleTransition()
+			self.executeCurrentState()		
+
+		else: #execute current state once more
+			self.executeCurrentState()
+
+	def reevaluate_internal(self, msg):
+		self.orch_rpc_api.reevaluate(
+			msg['player_id'],
+			msg['calls'],
+			msg['depth'],
+			msg['strategy'],
+			msg['strategy_area'],
+			msg['state']
+		)
+
+	def useBonus_internal(self, msg):
+		self.orch_rpc_api.use_bonus(
+			msg['player_id'],
+			msg['bonus_type'],
+			msg['bonuses_number']
+		)
+
+	def executeCurrentState(self):
+		print(self.currentRobotState)
+
+		msg = self.currentRobotState.execute()
+
+		if isinstance(self.currentRobotState, EnemyImmobilization):
+			self.useBonus_internal(msg)
+		elif isinstance(self.currentRobotState, RoundTermination):
+			self.useBonus_internal(msg)
+		elif isinstance(self.currentRobotState, ScoreMultiplication):
+			self.useBonus_internal(msg)
+		elif isinstance(self.currentRobotState, BonusAcquisition) or isinstance(self.currentRobotState, CardAcquisition) or isinstance(self.currentRobotState, EnemyCapture) or isinstance(self.currentRobotState, Wandering):
+			self.reevaluate_internal(msg)
+		else: #it is the start state, so the robot should wait until a transition becomes eligible
+			return
+
+if __name__ == "__main__":
+	pac = PacmanApp()
+	while True:
+		try:
+			time.sleep(0.01)
+		except KeyboardInterrupt:
+			break

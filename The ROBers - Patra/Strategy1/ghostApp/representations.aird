@@ -1,0 +1,1067 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:pacmanMetamodel="platform:/plugin/PacmanMetamodel/model/pacmanMetamodel.ecore" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+  <viewpoint:DAnalysis xmi:id="_B99R0CCWEemutJqwuBsD3w" selectedViews="_L6d-QCCWEemutJqwuBsD3w" version="12.1.0.201708031200">
+    <semanticResources>ghostApp.pacmanmetamodel</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" xmi:id="_L6d-QCCWEemutJqwuBsD3w">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_M8usgCCWEemutJqwuBsD3w" name="ghost App Strategy" repPath="#_M6q3ACCWEemutJqwuBsD3w">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='DevelopStrategy']"/>
+        <target xmi:type="pacmanMetamodel:PacmanApp" href="ghostApp.pacmanmetamodel#/"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_u7_b5TxkEemzesxQwEQMaw" name="Transition to Go for bonus! 1" repPath="#_u78YkDxkEemzesxQwEQMaw">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']"/>
+        <target xmi:type="pacmanMetamodel:Transition" href="ghostApp.pacmanmetamodel#//@hasState.0/@hasTransition.0"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_fr5EBTxmEemzesxQwEQMaw" name="Transition to Pacman stands still 1" repPath="#_fr2nwDxmEemzesxQwEQMaw">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']"/>
+        <target xmi:type="pacmanMetamodel:Transition" href="ghostApp.pacmanmetamodel#//@hasState.1/@hasTransition.0"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_p_48BTxpEemzesxQwEQMaw" name="Transition to Capture Pacman 3" repPath="#_p_3t4DxpEemzesxQwEQMaw">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']"/>
+        <target xmi:type="pacmanMetamodel:Transition" href="ghostApp.pacmanmetamodel#//@hasState.1/@hasTransition.1"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_UI3YNTzTEemzesxQwEQMaw" name="Transition to Wandering" repPath="#_UI2KEDzTEemzesxQwEQMaw">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']"/>
+        <target xmi:type="pacmanMetamodel:Transition" href="ghostApp.pacmanmetamodel#//@hasState.2/@hasTransition.0"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_62sT4DzTEemzesxQwEQMaw" name="Transition to Pacman stands still" repPath="#_62rFwDzTEemzesxQwEQMaw">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']"/>
+        <target xmi:type="pacmanMetamodel:Transition" href="ghostApp.pacmanmetamodel#//@hasState.2/@hasTransition.1"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_CdJLFTzYEemzesxQwEQMaw" name="Transition to Capture Pacman 1" repPath="#_CdHV4DzYEemzesxQwEQMaw">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']"/>
+        <target xmi:type="pacmanMetamodel:Transition" href="ghostApp.pacmanmetamodel#//@hasState.4/@hasTransition.0"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+  </viewpoint:DAnalysis>
+  <diagram:DSemanticDiagram xmi:id="_M8rCICCWEemutJqwuBsD3w" name="ghost App Strategy" uid="_M6q3ACCWEemutJqwuBsD3w">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_M8sQQCCWEemutJqwuBsD3w" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_M8sQQSCWEemutJqwuBsD3w"/>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_M9VJcCCWEemutJqwuBsD3w" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_M9VJcSCWEemutJqwuBsD3w" type="Sirius" element="_M8rCICCWEemutJqwuBsD3w" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_bkCvwDxkEemzesxQwEQMaw" type="2001" element="_bkATgDxkEemzesxQwEQMaw">
+          <children xmi:type="notation:Node" xmi:id="_bkCvwzxkEemzesxQwEQMaw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_bkCvxDxkEemzesxQwEQMaw" x="-1"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_bkCvxTxkEemzesxQwEQMaw" type="3005" element="_bkATgTxkEemzesxQwEQMaw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_bkCvxjxkEemzesxQwEQMaw" fontName="Noto Sans"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bkCvxzxkEemzesxQwEQMaw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_bkCvwTxkEemzesxQwEQMaw" fontName="Noto Sans" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bkCvwjxkEemzesxQwEQMaw" x="24" y="168" width="90" height="90"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_iPxn8DxkEemzesxQwEQMaw" type="2002" element="_iPtWgDxkEemzesxQwEQMaw">
+          <children xmi:type="notation:Node" xmi:id="_iPxn8zxkEemzesxQwEQMaw" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_iPxn9DxkEemzesxQwEQMaw" type="7001">
+            <children xmi:type="notation:Node" xmi:id="__GG6EDxkEemzesxQwEQMaw" type="3007" element="__GCooDxkEemzesxQwEQMaw">
+              <children xmi:type="notation:Node" xmi:id="__GG6EzxkEemzesxQwEQMaw" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="__GG6FDxkEemzesxQwEQMaw" x="4" y="-21"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="__GHhIDxkEemzesxQwEQMaw" type="3005" element="__GCooTxkEemzesxQwEQMaw">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="__GHhITxkEemzesxQwEQMaw" fontName="Noto Sans"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="__GHhIjxkEemzesxQwEQMaw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="__GG6ETxkEemzesxQwEQMaw" fontName="Noto Sans" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="__GG6EjxkEemzesxQwEQMaw" x="43" y="36" width="70" height="70"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_IGKlUDxlEemzesxQwEQMaw" type="3007" element="_IF-YEDxlEemzesxQwEQMaw">
+              <children xmi:type="notation:Node" xmi:id="_IGKlUzxlEemzesxQwEQMaw" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_IGKlVDxlEemzesxQwEQMaw" x="4" y="-21"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_PKF_0DzNEemzesxQwEQMaw" type="3005" element="_PKBHUDzNEemzesxQwEQMaw">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_PKF_0TzNEemzesxQwEQMaw" fontName="Noto Sans"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PKF_0jzNEemzesxQwEQMaw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_IGKlUTxlEemzesxQwEQMaw" fontName="Noto Sans" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IGKlUjxlEemzesxQwEQMaw" x="168" y="36" width="70" height="70"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_iPxn9TxkEemzesxQwEQMaw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_iPxn9jxkEemzesxQwEQMaw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_iPxn8TxkEemzesxQwEQMaw" fontName="Noto Sans" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_iPxn8jxkEemzesxQwEQMaw" x="228" y="89" width="250" height="250"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_TeSUIDxlEemzesxQwEQMaw" type="2001" element="_TeNboDxlEemzesxQwEQMaw">
+          <children xmi:type="notation:Node" xmi:id="_TeSUIzxlEemzesxQwEQMaw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_TeSUJDxlEemzesxQwEQMaw" y="-21"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_TeS7MDxlEemzesxQwEQMaw" type="3005" element="_TeOCsDxlEemzesxQwEQMaw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_TeS7MTxlEemzesxQwEQMaw" fontName="Noto Sans"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TeS7MjxlEemzesxQwEQMaw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_TeSUITxlEemzesxQwEQMaw" fontName="Noto Sans" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TeSUIjxlEemzesxQwEQMaw" x="636" y="180" width="90" height="90"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_b0n3gDxmEemzesxQwEQMaw" type="2001" element="_b0bDMDxmEemzesxQwEQMaw">
+          <children xmi:type="notation:Node" xmi:id="_b0oekDxmEemzesxQwEQMaw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_b0oekTxmEemzesxQwEQMaw" y="-21"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_b0rh4DxmEemzesxQwEQMaw" type="3005" element="_b0bqQDxmEemzesxQwEQMaw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_b0rh4TxmEemzesxQwEQMaw" fontName="Noto Sans"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_b0rh4jxmEemzesxQwEQMaw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_b0n3gTxmEemzesxQwEQMaw" fontName="Noto Sans" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_b0n3gjxmEemzesxQwEQMaw" x="636" y="36" width="90" height="90"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_rKhycDzSEemzesxQwEQMaw" type="2002" element="_rKUXEDzSEemzesxQwEQMaw">
+          <children xmi:type="notation:Node" xmi:id="_rKhyczzSEemzesxQwEQMaw" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_rKiZgDzSEemzesxQwEQMaw" type="7001">
+            <children xmi:type="notation:Node" xmi:id="_BEqHcDzTEemzesxQwEQMaw" type="3007" element="_BEcFADzTEemzesxQwEQMaw">
+              <children xmi:type="notation:Node" xmi:id="_BEqHczzTEemzesxQwEQMaw" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_BEqHdDzTEemzesxQwEQMaw" x="4" y="-21"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_BEqugDzTEemzesxQwEQMaw" type="3005" element="_BEcsEDzTEemzesxQwEQMaw">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_BEqugTzTEemzesxQwEQMaw" fontName="Noto Sans"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BEqugjzTEemzesxQwEQMaw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_BEqHcTzTEemzesxQwEQMaw" fontName="Noto Sans" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BEqHcjzTEemzesxQwEQMaw" x="7" y="41" width="70" height="70"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_1p4wcDzWEemzesxQwEQMaw" type="3007" element="_1puYYDzWEemzesxQwEQMaw">
+              <children xmi:type="notation:Node" xmi:id="_1p4wczzWEemzesxQwEQMaw" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_1p4wdDzWEemzesxQwEQMaw" x="4" y="-21"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_1p5XgDzWEemzesxQwEQMaw" type="3005" element="_1puYYTzWEemzesxQwEQMaw">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_1p5XgTzWEemzesxQwEQMaw" fontName="Noto Sans"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1p5XgjzWEemzesxQwEQMaw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_1p4wcTzWEemzesxQwEQMaw" fontName="Noto Sans" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1p4wcjzWEemzesxQwEQMaw" x="139" y="41" width="70" height="70"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_rKiZgTzSEemzesxQwEQMaw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_rKiZgjzSEemzesxQwEQMaw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_rKhycTzSEemzesxQwEQMaw" fontName="Noto Sans" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rKhycjzSEemzesxQwEQMaw" x="864" y="216" width="326" height="302"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_M9VJciCWEemutJqwuBsD3w"/>
+        <edges xmi:type="notation:Edge" xmi:id="_ld4isDxkEemzesxQwEQMaw" type="4001" element="_ld1fYDxkEemzesxQwEQMaw" source="_bkCvwDxkEemzesxQwEQMaw" target="_iPxn8DxkEemzesxQwEQMaw">
+          <children xmi:type="notation:Node" xmi:id="_ld4itDxkEemzesxQwEQMaw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ld4itTxkEemzesxQwEQMaw" x="-7" y="-9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_ld4itjxkEemzesxQwEQMaw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ld4itzxkEemzesxQwEQMaw" x="-3" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_ld4iuDxkEemzesxQwEQMaw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ld4iuTxkEemzesxQwEQMaw" x="-31" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_ld4isTxkEemzesxQwEQMaw" routing="Rectilinear"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_ld4isjxkEemzesxQwEQMaw" fontName="Noto Sans" fontHeight="8" bold="true"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ld4iszxkEemzesxQwEQMaw" points="[-2, 0, -116, 3]$[114, 0, 0, 3]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ld4iujxkEemzesxQwEQMaw" id="(1.0,0.5333333333333333)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ld4iuzxkEemzesxQwEQMaw" id="(0.0,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_dmgr4DxmEemzesxQwEQMaw" type="4001" element="_dmQNMDxmEemzesxQwEQMaw" source="_iPxn8DxkEemzesxQwEQMaw" target="_b0n3gDxmEemzesxQwEQMaw">
+          <children xmi:type="notation:Node" xmi:id="_dmgr5DxmEemzesxQwEQMaw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dmgr5TxmEemzesxQwEQMaw" x="-24" y="-16"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_dmgr5jxmEemzesxQwEQMaw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dmgr5zxmEemzesxQwEQMaw" x="231" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_dmgr6DxmEemzesxQwEQMaw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dmgr6TxmEemzesxQwEQMaw" x="8" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_dmgr4TxmEemzesxQwEQMaw" routing="Rectilinear"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_dmgr4jxmEemzesxQwEQMaw" fontName="Noto Sans" fontHeight="8" bold="true"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_dmgr4zxmEemzesxQwEQMaw" points="[-123, -36, -283, 17]$[-123, -53, -283, 0]$[173, -53, 13, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_dmgr6jxmEemzesxQwEQMaw" id="(1.0,0.14516129032258066)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_dmgr6zxmEemzesxQwEQMaw" id="(0.0,0.4)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_kQOK0DxmEemzesxQwEQMaw" type="4001" element="_kP2XYDxmEemzesxQwEQMaw" source="_b0n3gDxmEemzesxQwEQMaw" target="_TeSUIDxlEemzesxQwEQMaw">
+          <children xmi:type="notation:Node" xmi:id="_kQOx4DxmEemzesxQwEQMaw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kQOx4TxmEemzesxQwEQMaw" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_kQOx4jxmEemzesxQwEQMaw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kQOx4zxmEemzesxQwEQMaw" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_kQOx5DxmEemzesxQwEQMaw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kQOx5TxmEemzesxQwEQMaw" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_kQOK0TxmEemzesxQwEQMaw" routing="Rectilinear"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_kQOK0jxmEemzesxQwEQMaw" fontName="Noto Sans" fontHeight="8" bold="true"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_kQOK0zxmEemzesxQwEQMaw" points="[0, 0, 0, -54]$[0, 54, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_kQOx5jxmEemzesxQwEQMaw" id="(0.5,1.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_kQOx5zxmEemzesxQwEQMaw" id="(0.5,0.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_gT70EDxpEemzesxQwEQMaw" type="4001" element="_gTkAoDxpEemzesxQwEQMaw" source="_iPxn8DxkEemzesxQwEQMaw" target="_TeSUIDxlEemzesxQwEQMaw">
+          <children xmi:type="notation:Node" xmi:id="_gT9CMDxpEemzesxQwEQMaw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gT9CMTxpEemzesxQwEQMaw" x="4" y="-15"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_gT9pQDxpEemzesxQwEQMaw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gT9pQTxpEemzesxQwEQMaw" x="4" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_gT9pQjxpEemzesxQwEQMaw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gT9pQzxpEemzesxQwEQMaw" x="3" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_gT70ETxpEemzesxQwEQMaw" routing="Rectilinear"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_gT70EjxpEemzesxQwEQMaw" fontName="Noto Sans" fontHeight="8" bold="true"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_gT70EzxpEemzesxQwEQMaw" points="[0, 20, -160, -4]$[173, 20, 13, -4]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_gT9pRDxpEemzesxQwEQMaw" id="(1.0,0.4153225806451613)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_gT9pRTxpEemzesxQwEQMaw" id="(0.0,0.4)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_Rf2HgDzTEemzesxQwEQMaw" type="4001" element="_Rfp6QDzTEemzesxQwEQMaw" source="_TeSUIDxlEemzesxQwEQMaw" target="_rKhycDzSEemzesxQwEQMaw">
+          <children xmi:type="notation:Node" xmi:id="_Rf2HhDzTEemzesxQwEQMaw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Rf2HhTzTEemzesxQwEQMaw" x="250" y="-40" width="385" height="64"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Rf2ukDzTEemzesxQwEQMaw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Rf2ukTzTEemzesxQwEQMaw" x="-12" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Rf2ukjzTEemzesxQwEQMaw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Rf2ukzzTEemzesxQwEQMaw" x="-171" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_Rf2HgTzTEemzesxQwEQMaw" routing="Rectilinear"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_Rf2HgjzTEemzesxQwEQMaw" fontName="Noto Sans" fontHeight="8" bold="true"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Rf2HgzzTEemzesxQwEQMaw" points="[1, -1, -151, -119]$[296, -1, 144, -119]$[296, 10, 144, -108]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Rf2ulDzTEemzesxQwEQMaw" id="(0.8444444444444444,0.28888888888888886)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Rf2ulTzTEemzesxQwEQMaw" id="(0.0,0.3597335307179867)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_TAqaADzTEemzesxQwEQMaw" type="4001" element="_TAc-oDzTEemzesxQwEQMaw" source="_rKhycDzSEemzesxQwEQMaw" target="_TeSUIDxlEemzesxQwEQMaw">
+          <children xmi:type="notation:Node" xmi:id="_TAqaBDzTEemzesxQwEQMaw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TAqaBTzTEemzesxQwEQMaw" x="11" y="-9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_TAqaBjzTEemzesxQwEQMaw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TAqaBzzTEemzesxQwEQMaw" x="19" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_TAqaCDzTEemzesxQwEQMaw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TAqaCTzTEemzesxQwEQMaw" x="5" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_TAqaATzTEemzesxQwEQMaw" routing="Rectilinear"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_TAqaAjzTEemzesxQwEQMaw" fontName="Noto Sans" fontHeight="8" bold="true"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_TAqaAzzTEemzesxQwEQMaw" points="[0, 0, 192, 138]$[-192, 0, 0, 138]$[-192, -142, 0, -4]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_TAqaCjzTEemzesxQwEQMaw" id="(0.0,0.6395262768319763)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_TAqaCzzTEemzesxQwEQMaw" id="(0.4,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_vdDiIDzTEemzesxQwEQMaw" type="4001" element="_vc6_QDzTEemzesxQwEQMaw" source="_TeSUIDxlEemzesxQwEQMaw" target="_b0n3gDxmEemzesxQwEQMaw">
+          <children xmi:type="notation:Node" xmi:id="_vdDiJDzTEemzesxQwEQMaw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vdDiJTzTEemzesxQwEQMaw" x="82" y="-54"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_vdDiJjzTEemzesxQwEQMaw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vdDiJzzTEemzesxQwEQMaw" x="-16" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_vdDiKDzTEemzesxQwEQMaw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vdDiKTzTEemzesxQwEQMaw" x="22" y="-10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_vdDiITzTEemzesxQwEQMaw" routing="Rectilinear"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_vdDiIjzTEemzesxQwEQMaw" fontName="Noto Sans" fontHeight="8" bold="true"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_vdDiIzzTEemzesxQwEQMaw" points="[4, -1, -11, 66]$[195, -1, 180, 66]$[195, -112, 180, -45]$[8, -112, -7, -45]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_vdEJMDzTEemzesxQwEQMaw" id="(0.7666666666666667,0.14444444444444443)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_vdEJMTzTEemzesxQwEQMaw" id="(0.9333333333333333,1.0)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_bkATgDxkEemzesxQwEQMaw" outgoingEdges="_ld1fYDxkEemzesxQwEQMaw" width="9" height="9">
+      <target xmi:type="pacmanMetamodel:Start" href="ghostApp.pacmanmetamodel#//@hasState.0"/>
+      <semanticElements xmi:type="pacmanMetamodel:Start" href="ghostApp.pacmanmetamodel#//@hasState.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_bkATgTxkEemzesxQwEQMaw" showIcon="false" workspacePath="/GhostMetamodel.design/icons/png/Start_game.png">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='DevelopStrategy']/@defaultLayer/@nodeMappings[name='Start%20State']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='DevelopStrategy']/@defaultLayer/@nodeMappings[name='Start%20State']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_iPtWgDxkEemzesxQwEQMaw" name="Go for bonus!" outgoingEdges="_dmQNMDxmEemzesxQwEQMaw _gTkAoDxpEemzesxQwEQMaw" incomingEdges="_ld1fYDxkEemzesxQwEQMaw" width="25" height="25">
+      <target xmi:type="pacmanMetamodel:BonusAcquisition" href="ghostApp.pacmanmetamodel#//@hasState.1"/>
+      <semanticElements xmi:type="pacmanMetamodel:BonusAcquisition" href="ghostApp.pacmanmetamodel#//@hasState.1"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_iPtWgTxkEemzesxQwEQMaw" labelSize="12" iconPath="/GhostMetamodel.design/icons/png/Ghost/Ghost_bonus-resizeimage.png" labelAlignment="LEFT" borderSize="1" borderSizeComputationExpression="1" foregroundColor="255,255,255">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='DevelopStrategy']/@defaultLayer/@containerMappings[name='BonusAcquisition%20State%20']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='DevelopStrategy']/@defaultLayer/@containerMappings[name='BonusAcquisition%20State%20']"/>
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="__GCooDxkEemzesxQwEQMaw" name="Type: TO_HIGH_BONUS_AREA &#xA; Importance: HIGH" width="7" height="7">
+        <target xmi:type="pacmanMetamodel:BonusDistance" href="ghostApp.pacmanmetamodel#//@hasState.1/@hasBehavior.0"/>
+        <semanticElements xmi:type="pacmanMetamodel:BonusDistance" href="ghostApp.pacmanmetamodel#//@hasState.1/@hasBehavior.0"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="__GCooTxkEemzesxQwEQMaw" showIcon="false" workspacePath="/GhostMetamodel.design/icons/png/Bonus_area.png">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='DevelopStrategy']/@defaultLayer/@nodeMappings[name='BonusDistance%20Behavior']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='DevelopStrategy']/@defaultLayer/@nodeMappings[name='BonusDistance%20Behavior']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_IF-YEDxlEemzesxQwEQMaw" name="Type: MAX &#xA; Importance: NORMAL" width="7" height="7">
+        <target xmi:type="pacmanMetamodel:OpponentDistance" href="ghostApp.pacmanmetamodel#//@hasState.1/@hasBehavior.1"/>
+        <semanticElements xmi:type="pacmanMetamodel:OpponentDistance" href="ghostApp.pacmanmetamodel#//@hasState.1/@hasBehavior.1"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_PKBHUDzNEemzesxQwEQMaw" showIcon="false" workspacePath="/GhostMetamodel.design/icons/png/Ghost/Ghost_safe_area.png">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='DevelopStrategy']/@defaultLayer/@nodeMappings[name='OpponentDistance%20Behavior']/@conditionnalStyles.1/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='DevelopStrategy']/@defaultLayer/@nodeMappings[name='OpponentDistance%20Behavior']"/>
+      </ownedDiagramElements>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_ld1fYDxkEemzesxQwEQMaw" name="If: MY_BONUS &lt;= 1" sourceNode="_bkATgDxkEemzesxQwEQMaw" targetNode="_iPtWgDxkEemzesxQwEQMaw">
+      <target xmi:type="pacmanMetamodel:Transition" href="ghostApp.pacmanmetamodel#//@hasState.0/@hasTransition.0"/>
+      <semanticElements xmi:type="pacmanMetamodel:Transition" href="ghostApp.pacmanmetamodel#//@hasState.0/@hasTransition.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_L5r9cDxpEemzesxQwEQMaw" size="5" routingStyle="manhattan" strokeColor="252,175,62">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='DevelopStrategy']/@defaultLayer/@edgeMappings[name='TransitionEdge']/@conditionnalStyles.1/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_L5r9cTxpEemzesxQwEQMaw" showIcon="false">
+          <labelFormat>bold</labelFormat>
+        </centerLabelStyle>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='DevelopStrategy']/@defaultLayer/@edgeMappings[name='TransitionEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_TeNboDxlEemzesxQwEQMaw" name="CAPTURE PACMAN" outgoingEdges="_Rfp6QDzTEemzesxQwEQMaw _vc6_QDzTEemzesxQwEQMaw" incomingEdges="_kP2XYDxmEemzesxQwEQMaw _gTkAoDxpEemzesxQwEQMaw _TAc-oDzTEemzesxQwEQMaw" width="9" height="9">
+      <target xmi:type="pacmanMetamodel:EnemyCapture" href="ghostApp.pacmanmetamodel#//@hasState.2"/>
+      <semanticElements xmi:type="pacmanMetamodel:EnemyCapture" href="ghostApp.pacmanmetamodel#//@hasState.2"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_TeOCsDxlEemzesxQwEQMaw" showIcon="false" workspacePath="/GhostMetamodel.design/icons/png/Ghost/Ghost_attack.png">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='DevelopStrategy']/@defaultLayer/@nodeMappings[name='EnemyCapture%20State']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='DevelopStrategy']/@defaultLayer/@nodeMappings[name='EnemyCapture%20State']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_b0bDMDxmEemzesxQwEQMaw" name=" 5sec FREEZE " outgoingEdges="_kP2XYDxmEemzesxQwEQMaw" incomingEdges="_dmQNMDxmEemzesxQwEQMaw _vc6_QDzTEemzesxQwEQMaw" width="9" height="9">
+      <target xmi:type="pacmanMetamodel:EnemyImmobilization" href="ghostApp.pacmanmetamodel#//@hasState.3"/>
+      <semanticElements xmi:type="pacmanMetamodel:EnemyImmobilization" href="ghostApp.pacmanmetamodel#//@hasState.3"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_b0bqQDxmEemzesxQwEQMaw" showIcon="false" workspacePath="/GhostMetamodel.design/icons/png/Ghost/Ghost_freeze.png">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='DevelopStrategy']/@defaultLayer/@nodeMappings[name='EnemyImmobilization%20State%20']/@conditionnalStyles.0/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='DevelopStrategy']/@defaultLayer/@nodeMappings[name='EnemyImmobilization%20State%20']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_dmQNMDxmEemzesxQwEQMaw" name="If: (MY_BONUS > 0) AND (DIST_TO_OPP &lt; 7)" sourceNode="_iPtWgDxkEemzesxQwEQMaw" targetNode="_b0bDMDxmEemzesxQwEQMaw">
+      <target xmi:type="pacmanMetamodel:Transition" href="ghostApp.pacmanmetamodel#//@hasState.1/@hasTransition.0"/>
+      <semanticElements xmi:type="pacmanMetamodel:Transition" href="ghostApp.pacmanmetamodel#//@hasState.1/@hasTransition.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_xjf-wDxmEemzesxQwEQMaw" size="5" routingStyle="manhattan" strokeColor="173,127,168">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='DevelopStrategy']/@defaultLayer/@edgeMappings[name='TransitionEdge']/@conditionnalStyles.2/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_xjf-wTxmEemzesxQwEQMaw" showIcon="false">
+          <labelFormat>bold</labelFormat>
+        </centerLabelStyle>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='DevelopStrategy']/@defaultLayer/@edgeMappings[name='TransitionEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_kP2XYDxmEemzesxQwEQMaw" name=" " sourceNode="_b0bDMDxmEemzesxQwEQMaw" targetNode="_TeNboDxlEemzesxQwEQMaw">
+      <target xmi:type="pacmanMetamodel:Transition" href="ghostApp.pacmanmetamodel#//@hasState.3/@hasTransition.0"/>
+      <semanticElements xmi:type="pacmanMetamodel:Transition" href="ghostApp.pacmanmetamodel#//@hasState.3/@hasTransition.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_kP2XYTxmEemzesxQwEQMaw" size="5" routingStyle="manhattan" strokeColor="138,226,52">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='DevelopStrategy']/@defaultLayer/@edgeMappings[name='TransitionEdge']/@conditionnalStyles.0/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_kP2XYjxmEemzesxQwEQMaw" showIcon="false">
+          <labelFormat>bold</labelFormat>
+        </centerLabelStyle>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='DevelopStrategy']/@defaultLayer/@edgeMappings[name='TransitionEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_gTkAoDxpEemzesxQwEQMaw" name="If: UNTAKEN_BONUS = 0" sourceNode="_iPtWgDxkEemzesxQwEQMaw" targetNode="_TeNboDxlEemzesxQwEQMaw">
+      <target xmi:type="pacmanMetamodel:Transition" href="ghostApp.pacmanmetamodel#//@hasState.1/@hasTransition.1"/>
+      <semanticElements xmi:type="pacmanMetamodel:Transition" href="ghostApp.pacmanmetamodel#//@hasState.1/@hasTransition.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_qej1ADxpEemzesxQwEQMaw" size="5" routingStyle="manhattan" strokeColor="252,175,62">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='DevelopStrategy']/@defaultLayer/@edgeMappings[name='TransitionEdge']/@conditionnalStyles.1/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_qej1ATxpEemzesxQwEQMaw" showIcon="false">
+          <labelFormat>bold</labelFormat>
+        </centerLabelStyle>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='DevelopStrategy']/@defaultLayer/@edgeMappings[name='TransitionEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_rKUXEDzSEemzesxQwEQMaw" name="Wandering" outgoingEdges="_TAc-oDzTEemzesxQwEQMaw" incomingEdges="_Rfp6QDzTEemzesxQwEQMaw" width="25" height="25">
+      <target xmi:type="pacmanMetamodel:Wandering" href="ghostApp.pacmanmetamodel#//@hasState.4"/>
+      <semanticElements xmi:type="pacmanMetamodel:Wandering" href="ghostApp.pacmanmetamodel#//@hasState.4"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_rKVlMDzSEemzesxQwEQMaw" labelSize="12" iconPath="/GhostMetamodel.design/icons/png/Ghost/Ghost_wondering-resizeimage.png" labelAlignment="LEFT" borderSize="1" borderSizeComputationExpression="1" foregroundColor="255,255,255">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='DevelopStrategy']/@defaultLayer/@containerMappings[name='Wandering%20State%20']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='DevelopStrategy']/@defaultLayer/@containerMappings[name='Wandering%20State%20']"/>
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_BEcFADzTEemzesxQwEQMaw" name="Type: TO_CLOSEST_BONUS &#xA; Importance: HIGH" width="7" height="7">
+        <target xmi:type="pacmanMetamodel:BonusDistance" href="ghostApp.pacmanmetamodel#//@hasState.4/@hasBehavior.0"/>
+        <semanticElements xmi:type="pacmanMetamodel:BonusDistance" href="ghostApp.pacmanmetamodel#//@hasState.4/@hasBehavior.0"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_BEcsEDzTEemzesxQwEQMaw" showIcon="false" workspacePath="/GhostMetamodel.design/icons/png/Bonus_area.png">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='DevelopStrategy']/@defaultLayer/@nodeMappings[name='BonusDistance%20Behavior']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='DevelopStrategy']/@defaultLayer/@nodeMappings[name='BonusDistance%20Behavior']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_1puYYDzWEemzesxQwEQMaw" name="Type: TO_CLOSEST_POINTS &#xA; Importance: NORMAL" width="7" height="7">
+        <target xmi:type="pacmanMetamodel:CardDistance" href="ghostApp.pacmanmetamodel#//@hasState.4/@hasBehavior.1"/>
+        <semanticElements xmi:type="pacmanMetamodel:CardDistance" href="ghostApp.pacmanmetamodel#//@hasState.4/@hasBehavior.1"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_1puYYTzWEemzesxQwEQMaw" showIcon="false" workspacePath="/GhostMetamodel.design/icons/png/Points_area.png">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='DevelopStrategy']/@defaultLayer/@nodeMappings[name='CardDistance%20Behavior']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='DevelopStrategy']/@defaultLayer/@nodeMappings[name='CardDistance%20Behavior']"/>
+      </ownedDiagramElements>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_Rfp6QDzTEemzesxQwEQMaw" name="If: (DIST_TO_OPP >= 5) AND (MY_BONUS >= OPP_BONUS) AND (UNTAKEN_BONUS &lt;> 0)" sourceNode="_TeNboDxlEemzesxQwEQMaw" targetNode="_rKUXEDzSEemzesxQwEQMaw">
+      <target xmi:type="pacmanMetamodel:Transition" href="ghostApp.pacmanmetamodel#//@hasState.2/@hasTransition.0"/>
+      <semanticElements xmi:type="pacmanMetamodel:Transition" href="ghostApp.pacmanmetamodel#//@hasState.2/@hasTransition.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_ojw80DzYEemzesxQwEQMaw" size="5" routingStyle="manhattan" strokeColor="173,127,168">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='DevelopStrategy']/@defaultLayer/@edgeMappings[name='TransitionEdge']/@conditionnalStyles.2/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_ojw80TzYEemzesxQwEQMaw" showIcon="false">
+          <labelFormat>bold</labelFormat>
+        </centerLabelStyle>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='DevelopStrategy']/@defaultLayer/@edgeMappings[name='TransitionEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_TAc-oDzTEemzesxQwEQMaw" name="If: (DIST_TO_OPP &lt;= 4) OR (UNTAKEN_BONUS = 0)" sourceNode="_rKUXEDzSEemzesxQwEQMaw" targetNode="_TeNboDxlEemzesxQwEQMaw">
+      <target xmi:type="pacmanMetamodel:Transition" href="ghostApp.pacmanmetamodel#//@hasState.4/@hasTransition.0"/>
+      <semanticElements xmi:type="pacmanMetamodel:Transition" href="ghostApp.pacmanmetamodel#//@hasState.4/@hasTransition.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_BvQsMDzqEemzesxQwEQMaw" size="5" routingStyle="manhattan" strokeColor="173,127,168">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='DevelopStrategy']/@defaultLayer/@edgeMappings[name='TransitionEdge']/@conditionnalStyles.2/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_BvQsMTzqEemzesxQwEQMaw" showIcon="false">
+          <labelFormat>bold</labelFormat>
+        </centerLabelStyle>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='DevelopStrategy']/@defaultLayer/@edgeMappings[name='TransitionEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_vc6_QDzTEemzesxQwEQMaw" name="If: (DIST_TO_OPP &lt; 6) AND (DIST_TO_OPP &lt;= 6)" sourceNode="_TeNboDxlEemzesxQwEQMaw" targetNode="_b0bDMDxmEemzesxQwEQMaw">
+      <target xmi:type="pacmanMetamodel:Transition" href="ghostApp.pacmanmetamodel#//@hasState.2/@hasTransition.1"/>
+      <semanticElements xmi:type="pacmanMetamodel:Transition" href="ghostApp.pacmanmetamodel#//@hasState.2/@hasTransition.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_K8pRgDzZEemzesxQwEQMaw" size="5" routingStyle="manhattan" strokeColor="173,127,168">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='DevelopStrategy']/@defaultLayer/@edgeMappings[name='TransitionEdge']/@conditionnalStyles.2/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_K8pRgTzZEemzesxQwEQMaw" showIcon="false">
+          <labelFormat>bold</labelFormat>
+        </centerLabelStyle>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='DevelopStrategy']/@defaultLayer/@edgeMappings[name='TransitionEdge']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='DevelopStrategy']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_M8sQQyCWEemutJqwuBsD3w"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='DevelopStrategy']/@defaultLayer"/>
+    <target xmi:type="pacmanMetamodel:PacmanApp" href="ghostApp.pacmanmetamodel#/"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram xmi:id="_u7_b4DxkEemzesxQwEQMaw" name="Transition to Go for bonus! 1" uid="_u78YkDxkEemzesxQwEQMaw">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_u7_b4TxkEemzesxQwEQMaw" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_u7_b4jxkEemzesxQwEQMaw"/>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_u8EUYDxkEemzesxQwEQMaw" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_u8EUYTxkEemzesxQwEQMaw" type="Sirius" element="_u7_b4DxkEemzesxQwEQMaw" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_NP6JgDxpEemzesxQwEQMaw" type="2003" element="_NPwYgDxpEemzesxQwEQMaw">
+          <children xmi:type="notation:Node" xmi:id="_NP7-sDxpEemzesxQwEQMaw" type="5007"/>
+          <children xmi:type="notation:Node" xmi:id="_NP7-sTxpEemzesxQwEQMaw" type="7004">
+            <children xmi:type="notation:Node" xmi:id="_NP8lwDxpEemzesxQwEQMaw" type="3010" element="_NPwYgjxpEemzesxQwEQMaw">
+              <styles xmi:type="notation:FontStyle" xmi:id="_NP8lwTxpEemzesxQwEQMaw" fontName="Noto Sans" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_NP8lwjxpEemzesxQwEQMaw"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_NP8lwzxpEemzesxQwEQMaw" type="3010" element="_NPw_kTxpEemzesxQwEQMaw">
+              <styles xmi:type="notation:FontStyle" xmi:id="_NP8lxDxpEemzesxQwEQMaw" fontName="Noto Sans" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_NP8lxTxpEemzesxQwEQMaw"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_NP7-sjxpEemzesxQwEQMaw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_NP7-szxpEemzesxQwEQMaw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_NP6JgTxpEemzesxQwEQMaw" fontName="Noto Sans" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NP6wkDxpEemzesxQwEQMaw" x="963" y="55"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_u8EUYjxkEemzesxQwEQMaw"/>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_NPwYgDxpEemzesxQwEQMaw" name="MY_BONUS   &lt;=  1.0">
+      <target xmi:type="pacmanMetamodel:Condition" href="ghostApp.pacmanmetamodel#//@hasState.0/@hasTransition.0/@hasCondition"/>
+      <semanticElements xmi:type="pacmanMetamodel:Condition" href="ghostApp.pacmanmetamodel#//@hasState.0/@hasTransition.0/@hasCondition"/>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_NPwYgTxpEemzesxQwEQMaw" showIcon="false" iconPath="/PacmanMetamodel.design/icons/Condition/condition.png" borderSize="1" borderSizeComputationExpression="1" backgroundColor="217,196,215" foregroundColor="217,196,215">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer/@containerMappings[name='Condition']/@conditionnalStyles.6/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer/@containerMappings[name='Condition']"/>
+      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_NPwYgjxpEemzesxQwEQMaw" name="MY_BONUS">
+        <target xmi:type="pacmanMetamodel:GameVariable" href="ghostApp.pacmanmetamodel#//@hasState.0/@hasTransition.0/@hasCondition/@hasOperand.0"/>
+        <semanticElements xmi:type="pacmanMetamodel:GameVariable" href="ghostApp.pacmanmetamodel#//@hasState.0/@hasTransition.0/@hasCondition/@hasOperand.0"/>
+        <ownedStyle xmi:type="diagram:Square" xmi:id="_NPw_kDxpEemzesxQwEQMaw" showIcon="false" labelPosition="node" color="173,127,168">
+          <description xmi:type="style:SquareDescription" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer/@nodeMappings[name='GameVariable']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer/@nodeMappings[name='GameVariable']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_NPw_kTxpEemzesxQwEQMaw" name="1.0">
+        <target xmi:type="pacmanMetamodel:Value" href="ghostApp.pacmanmetamodel#//@hasState.0/@hasTransition.0/@hasCondition/@hasOperand.1"/>
+        <semanticElements xmi:type="pacmanMetamodel:Value" href="ghostApp.pacmanmetamodel#//@hasState.0/@hasTransition.0/@hasCondition/@hasOperand.1"/>
+        <ownedStyle xmi:type="diagram:Square" xmi:id="_NPw_kjxpEemzesxQwEQMaw" showIcon="false" labelPosition="node" color="239,41,41">
+          <description xmi:type="style:SquareDescription" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer/@nodeMappings[name='Value']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer/@nodeMappings[name='Value']"/>
+      </ownedElements>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_u7_b5DxkEemzesxQwEQMaw"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer"/>
+    <target xmi:type="pacmanMetamodel:Transition" href="ghostApp.pacmanmetamodel#//@hasState.0/@hasTransition.0"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram xmi:id="_fr5EADxmEemzesxQwEQMaw" name="Transition to Pacman stands still 1" uid="_fr2nwDxmEemzesxQwEQMaw">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_fr5EATxmEemzesxQwEQMaw" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_fr5EAjxmEemzesxQwEQMaw"/>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_fr7gQDxmEemzesxQwEQMaw" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_fr7gQTxmEemzesxQwEQMaw" type="Sirius" element="_fr5EADxmEemzesxQwEQMaw" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_wKT-QDxmEemzesxQwEQMaw" type="2002" element="_wKJmMDxmEemzesxQwEQMaw">
+          <children xmi:type="notation:Node" xmi:id="_wKT-QzxmEemzesxQwEQMaw" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_wKT-RDxmEemzesxQwEQMaw" type="7001">
+            <children xmi:type="notation:Node" xmi:id="_wwvsIDxmEemzesxQwEQMaw" type="3009" element="_wwmiMDxmEemzesxQwEQMaw">
+              <children xmi:type="notation:Node" xmi:id="_wwwTMDxmEemzesxQwEQMaw" type="5004"/>
+              <children xmi:type="notation:Node" xmi:id="_wwwTMTxmEemzesxQwEQMaw" type="7003">
+                <children xmi:type="notation:Node" xmi:id="_wwwTNDxmEemzesxQwEQMaw" type="3010" element="_wwnwUDxmEemzesxQwEQMaw">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_wwwTNTxmEemzesxQwEQMaw" fontName="Noto Sans" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_wwwTNjxmEemzesxQwEQMaw"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="__Elp8DzOEemzesxQwEQMaw" type="3010" element="__EPrsDzOEemzesxQwEQMaw">
+                  <styles xmi:type="notation:FontStyle" xmi:id="__Elp8TzOEemzesxQwEQMaw" fontName="Noto Sans" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="__Elp8jzOEemzesxQwEQMaw"/>
+                </children>
+                <styles xmi:type="notation:SortingStyle" xmi:id="_wwwTMjxmEemzesxQwEQMaw"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_wwwTMzxmEemzesxQwEQMaw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_wwvsITxmEemzesxQwEQMaw" fontName="Noto Sans" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wwvsIjxmEemzesxQwEQMaw" x="123" y="61"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_jb4okDzOEemzesxQwEQMaw" type="3009" element="_jbr0QDzOEemzesxQwEQMaw">
+              <children xmi:type="notation:Node" xmi:id="_jb4okzzOEemzesxQwEQMaw" type="5004"/>
+              <children xmi:type="notation:Node" xmi:id="_jb4olDzOEemzesxQwEQMaw" type="7003">
+                <children xmi:type="notation:Node" xmi:id="_mAFqsDzOEemzesxQwEQMaw" type="3010" element="_l_3BMDzOEemzesxQwEQMaw">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_mAFqsTzOEemzesxQwEQMaw" fontName="Noto Sans" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_mAFqsjzOEemzesxQwEQMaw"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_oWXlkDzOEemzesxQwEQMaw" type="3010" element="_oWKxQDzOEemzesxQwEQMaw">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_oWXlkTzOEemzesxQwEQMaw" fontName="Noto Sans" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_oWXlkjzOEemzesxQwEQMaw"/>
+                </children>
+                <styles xmi:type="notation:SortingStyle" xmi:id="_jb4olTzOEemzesxQwEQMaw"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_jb4oljzOEemzesxQwEQMaw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_jb4okTzOEemzesxQwEQMaw" fontName="Noto Sans" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jb4okjzOEemzesxQwEQMaw" x="327" y="61" width="267" height="63"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_wKT-RTxmEemzesxQwEQMaw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_wKT-RjxmEemzesxQwEQMaw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_wKT-QTxmEemzesxQwEQMaw" fontName="Noto Sans" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wKT-QjxmEemzesxQwEQMaw" x="36" y="12" width="700" height="450"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_fr7gQjxmEemzesxQwEQMaw"/>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_wKJmMDxmEemzesxQwEQMaw" name="AND Condition Group" width="70" height="45">
+      <target xmi:type="pacmanMetamodel:ConditionGroup" href="ghostApp.pacmanmetamodel#//@hasState.1/@hasTransition.0/@hasConditionGroup"/>
+      <semanticElements xmi:type="pacmanMetamodel:ConditionGroup" href="ghostApp.pacmanmetamodel#//@hasState.1/@hasTransition.0/@hasConditionGroup"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_wKJmMTxmEemzesxQwEQMaw" showIcon="false" iconPath="/PacmanMetamodel.design/icons/ConditionGroups/digital-icon-25_2.png" borderSize="5" borderSizeComputationExpression="5" backgroundStyle="GradientTopToBottom" foregroundColor="194,239,255">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer/@containerMappings[name='ConditionGroup%20Container']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer/@containerMappings[name='ConditionGroup%20Container']"/>
+      <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_wwmiMDxmEemzesxQwEQMaw" name="MY_BONUS   >  0.0">
+        <target xmi:type="pacmanMetamodel:Condition" href="ghostApp.pacmanmetamodel#//@hasState.1/@hasTransition.0/@hasConditionGroup/@hasCondition.0"/>
+        <semanticElements xmi:type="pacmanMetamodel:Condition" href="ghostApp.pacmanmetamodel#//@hasState.1/@hasTransition.0/@hasConditionGroup/@hasCondition.0"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_AXYHgDzPEemzesxQwEQMaw" showIcon="false" iconPath="/PacmanMetamodel.design/icons/Condition/condition.png" borderSize="1" borderSizeComputationExpression="1" backgroundColor="255,245,181" foregroundColor="255,245,181">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer/@containerMappings[name='Condition']/@conditionnalStyles.12/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer/@containerMappings[name='Condition']"/>
+        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_wwnwUDxmEemzesxQwEQMaw" name="MY_BONUS">
+          <target xmi:type="pacmanMetamodel:GameVariable" href="ghostApp.pacmanmetamodel#//@hasState.1/@hasTransition.0/@hasConditionGroup/@hasCondition.0/@hasOperand.0"/>
+          <semanticElements xmi:type="pacmanMetamodel:GameVariable" href="ghostApp.pacmanmetamodel#//@hasState.1/@hasTransition.0/@hasConditionGroup/@hasCondition.0/@hasOperand.0"/>
+          <ownedStyle xmi:type="diagram:Square" xmi:id="_wwnwUTxmEemzesxQwEQMaw" showIcon="false" labelPosition="node" color="173,127,168">
+            <description xmi:type="style:SquareDescription" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer/@nodeMappings[name='GameVariable']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer/@nodeMappings[name='GameVariable']"/>
+        </ownedElements>
+        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="__EPrsDzOEemzesxQwEQMaw" name="0.0">
+          <target xmi:type="pacmanMetamodel:Value" href="ghostApp.pacmanmetamodel#//@hasState.1/@hasTransition.0/@hasConditionGroup/@hasCondition.0/@hasOperand.1"/>
+          <semanticElements xmi:type="pacmanMetamodel:Value" href="ghostApp.pacmanmetamodel#//@hasState.1/@hasTransition.0/@hasConditionGroup/@hasCondition.0/@hasOperand.1"/>
+          <ownedStyle xmi:type="diagram:Square" xmi:id="__EPrsTzOEemzesxQwEQMaw" showIcon="false" labelPosition="node" color="239,41,41">
+            <description xmi:type="style:SquareDescription" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer/@nodeMappings[name='Value']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer/@nodeMappings[name='Value']"/>
+        </ownedElements>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_jbr0QDzOEemzesxQwEQMaw" name="DIST_TO_OPP   &lt;  7.0">
+        <target xmi:type="pacmanMetamodel:Condition" href="ghostApp.pacmanmetamodel#//@hasState.1/@hasTransition.0/@hasConditionGroup/@hasCondition.1"/>
+        <semanticElements xmi:type="pacmanMetamodel:Condition" href="ghostApp.pacmanmetamodel#//@hasState.1/@hasTransition.0/@hasConditionGroup/@hasCondition.1"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_6H3RQDzOEemzesxQwEQMaw" showIcon="false" iconPath="/PacmanMetamodel.design/icons/Condition/condition.png" borderSize="1" borderSizeComputationExpression="1" backgroundColor="217,196,215" foregroundColor="217,196,215">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer/@containerMappings[name='Condition']/@conditionnalStyles.15/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer/@containerMappings[name='Condition']"/>
+        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_l_3BMDzOEemzesxQwEQMaw" name="DIST_TO_OPP">
+          <target xmi:type="pacmanMetamodel:GameVariable" href="ghostApp.pacmanmetamodel#//@hasState.1/@hasTransition.0/@hasConditionGroup/@hasCondition.1/@hasOperand.0"/>
+          <semanticElements xmi:type="pacmanMetamodel:GameVariable" href="ghostApp.pacmanmetamodel#//@hasState.1/@hasTransition.0/@hasConditionGroup/@hasCondition.1/@hasOperand.0"/>
+          <ownedStyle xmi:type="diagram:Square" xmi:id="_l_3oQDzOEemzesxQwEQMaw" showIcon="false" labelPosition="node" color="173,127,168">
+            <description xmi:type="style:SquareDescription" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer/@nodeMappings[name='GameVariable']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer/@nodeMappings[name='GameVariable']"/>
+        </ownedElements>
+        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_oWKxQDzOEemzesxQwEQMaw" name="7.0">
+          <target xmi:type="pacmanMetamodel:Value" href="ghostApp.pacmanmetamodel#//@hasState.1/@hasTransition.0/@hasConditionGroup/@hasCondition.1/@hasOperand.1"/>
+          <semanticElements xmi:type="pacmanMetamodel:Value" href="ghostApp.pacmanmetamodel#//@hasState.1/@hasTransition.0/@hasConditionGroup/@hasCondition.1/@hasOperand.1"/>
+          <ownedStyle xmi:type="diagram:Square" xmi:id="_oWLYUDzOEemzesxQwEQMaw" showIcon="false" labelPosition="node" color="239,41,41">
+            <description xmi:type="style:SquareDescription" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer/@nodeMappings[name='Value']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer/@nodeMappings[name='Value']"/>
+        </ownedElements>
+      </ownedDiagramElements>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_fr5EBDxmEemzesxQwEQMaw"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer"/>
+    <target xmi:type="pacmanMetamodel:Transition" href="ghostApp.pacmanmetamodel#//@hasState.1/@hasTransition.0"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram xmi:id="_p_48ADxpEemzesxQwEQMaw" name="Transition to Capture Pacman 3" uid="_p_3t4DxpEemzesxQwEQMaw">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_p_48ATxpEemzesxQwEQMaw" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_p_48AjxpEemzesxQwEQMaw"/>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_p_7YQDxpEemzesxQwEQMaw" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_p_7YQTxpEemzesxQwEQMaw" type="Sirius" element="_p_48ADxpEemzesxQwEQMaw" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_qep7oDxpEemzesxQwEQMaw" type="2003" element="_qeaEADxpEemzesxQwEQMaw">
+          <children xmi:type="notation:Node" xmi:id="_qep7ozxpEemzesxQwEQMaw" type="5007"/>
+          <children xmi:type="notation:Node" xmi:id="_qep7pDxpEemzesxQwEQMaw" type="7004">
+            <children xmi:type="notation:Node" xmi:id="_quSTEDxpEemzesxQwEQMaw" type="3010" element="_quHT8DxpEemzesxQwEQMaw">
+              <styles xmi:type="notation:FontStyle" xmi:id="_quSTETxpEemzesxQwEQMaw" fontName="Noto Sans" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_quSTEjxpEemzesxQwEQMaw"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_q7GAADxpEemzesxQwEQMaw" type="3010" element="_q6yeADxpEemzesxQwEQMaw">
+              <styles xmi:type="notation:FontStyle" xmi:id="_q7GAATxpEemzesxQwEQMaw" fontName="Noto Sans" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_q7GAAjxpEemzesxQwEQMaw"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_qep7pTxpEemzesxQwEQMaw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_qep7pjxpEemzesxQwEQMaw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_qep7oTxpEemzesxQwEQMaw" fontName="Noto Sans" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qep7ojxpEemzesxQwEQMaw" x="564" y="132"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_p_7YQjxpEemzesxQwEQMaw"/>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_qeaEADxpEemzesxQwEQMaw" name="UNTAKEN_BONUS   =  0.0">
+      <target xmi:type="pacmanMetamodel:Condition" href="ghostApp.pacmanmetamodel#//@hasState.1/@hasTransition.1/@hasCondition"/>
+      <semanticElements xmi:type="pacmanMetamodel:Condition" href="ghostApp.pacmanmetamodel#//@hasState.1/@hasTransition.1/@hasCondition"/>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_q62vcDxpEemzesxQwEQMaw" showIcon="false" iconPath="/PacmanMetamodel.design/icons/Condition/condition.png" borderSize="1" borderSizeComputationExpression="1" backgroundColor="204,242,166" foregroundColor="204,242,166">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer/@containerMappings[name='Condition']/@conditionnalStyles.3/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer/@containerMappings[name='Condition']"/>
+      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_quHT8DxpEemzesxQwEQMaw" name="UNTAKEN_BONUS">
+        <target xmi:type="pacmanMetamodel:GameVariable" href="ghostApp.pacmanmetamodel#//@hasState.1/@hasTransition.1/@hasCondition/@hasOperand.0"/>
+        <semanticElements xmi:type="pacmanMetamodel:GameVariable" href="ghostApp.pacmanmetamodel#//@hasState.1/@hasTransition.1/@hasCondition/@hasOperand.0"/>
+        <ownedStyle xmi:type="diagram:Square" xmi:id="_quHT8TxpEemzesxQwEQMaw" showIcon="false" labelPosition="node" color="173,127,168">
+          <description xmi:type="style:SquareDescription" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer/@nodeMappings[name='GameVariable']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer/@nodeMappings[name='GameVariable']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_q6yeADxpEemzesxQwEQMaw" name="0.0">
+        <target xmi:type="pacmanMetamodel:Value" href="ghostApp.pacmanmetamodel#//@hasState.1/@hasTransition.1/@hasCondition/@hasOperand.1"/>
+        <semanticElements xmi:type="pacmanMetamodel:Value" href="ghostApp.pacmanmetamodel#//@hasState.1/@hasTransition.1/@hasCondition/@hasOperand.1"/>
+        <ownedStyle xmi:type="diagram:Square" xmi:id="_q6yeATxpEemzesxQwEQMaw" showIcon="false" labelPosition="node" color="239,41,41">
+          <description xmi:type="style:SquareDescription" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer/@nodeMappings[name='Value']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer/@nodeMappings[name='Value']"/>
+      </ownedElements>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_p_48BDxpEemzesxQwEQMaw"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer"/>
+    <target xmi:type="pacmanMetamodel:Transition" href="ghostApp.pacmanmetamodel#//@hasState.1/@hasTransition.1"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram xmi:id="_UI3YMDzTEemzesxQwEQMaw" name="Transition to Wandering" uid="_UI2KEDzTEemzesxQwEQMaw">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_UI3YMTzTEemzesxQwEQMaw" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_UI3YMjzTEemzesxQwEQMaw"/>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_UI-s8DzTEemzesxQwEQMaw" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_UI-s8TzTEemzesxQwEQMaw" type="Sirius" element="_UI3YMDzTEemzesxQwEQMaw" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_ojzZEDzYEemzesxQwEQMaw" type="2002" element="_ojpBADzYEemzesxQwEQMaw">
+          <children xmi:type="notation:Node" xmi:id="_ojzZEzzYEemzesxQwEQMaw" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_ojzZFDzYEemzesxQwEQMaw" type="7001">
+            <children xmi:type="notation:Node" xmi:id="_ojzZFzzYEemzesxQwEQMaw" type="3009" element="_ojpBAjzYEemzesxQwEQMaw">
+              <children xmi:type="notation:Node" xmi:id="_ojzZGjzYEemzesxQwEQMaw" type="5004"/>
+              <children xmi:type="notation:Node" xmi:id="_oj0AIDzYEemzesxQwEQMaw" type="7003">
+                <children xmi:type="notation:Node" xmi:id="_oj0AKjzYEemzesxQwEQMaw" type="3010" element="_ojpoEjzYEemzesxQwEQMaw">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_oj0AKzzYEemzesxQwEQMaw" fontName="Noto Sans" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_oj0ALDzYEemzesxQwEQMaw"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_oj0ALTzYEemzesxQwEQMaw" type="3010" element="_ojpoFDzYEemzesxQwEQMaw">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_oj0ALjzYEemzesxQwEQMaw" fontName="Noto Sans" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_oj0ALzzYEemzesxQwEQMaw"/>
+                </children>
+                <styles xmi:type="notation:SortingStyle" xmi:id="_oj0AITzYEemzesxQwEQMaw"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_oj0AIjzYEemzesxQwEQMaw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_ojzZGDzYEemzesxQwEQMaw" fontName="Noto Sans" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ojzZGTzYEemzesxQwEQMaw" x="123" y="85"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_oj0AIzzYEemzesxQwEQMaw" type="3009" element="_ojpoEDzYEemzesxQwEQMaw">
+              <children xmi:type="notation:Node" xmi:id="_oj0AJjzYEemzesxQwEQMaw" type="5004"/>
+              <children xmi:type="notation:Node" xmi:id="_oj0AJzzYEemzesxQwEQMaw" type="7003">
+                <children xmi:type="notation:Node" xmi:id="_oj0AMDzYEemzesxQwEQMaw" type="3010" element="_ojpoFjzYEemzesxQwEQMaw">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_oj0AMTzYEemzesxQwEQMaw" fontName="Noto Sans" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_oj0AMjzYEemzesxQwEQMaw"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_oj0AMzzYEemzesxQwEQMaw" type="3010" element="_ojqPITzYEemzesxQwEQMaw">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_oj0ANDzYEemzesxQwEQMaw" fontName="Noto Sans" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_oj0ANTzYEemzesxQwEQMaw"/>
+                </children>
+                <styles xmi:type="notation:SortingStyle" xmi:id="_oj0AKDzYEemzesxQwEQMaw"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_oj0AKTzYEemzesxQwEQMaw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_oj0AJDzYEemzesxQwEQMaw" fontName="Noto Sans" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oj0AJTzYEemzesxQwEQMaw" x="387" y="122"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_tq9vEDz3EemzesxQwEQMaw" type="3009" element="_tq1MMDz3EemzesxQwEQMaw">
+              <children xmi:type="notation:Node" xmi:id="_tq-WIDz3EemzesxQwEQMaw" type="5004"/>
+              <children xmi:type="notation:Node" xmi:id="_tq-WITz3EemzesxQwEQMaw" type="7003">
+                <children xmi:type="notation:Node" xmi:id="_uXYwMDz3EemzesxQwEQMaw" type="3010" element="_uXOYIDz3EemzesxQwEQMaw">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_uXYwMTz3EemzesxQwEQMaw" fontName="Noto Sans" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_uXYwMjz3EemzesxQwEQMaw"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_uu5RQDz3EemzesxQwEQMaw" type="3010" element="_uuu5MDz3EemzesxQwEQMaw">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_uu5RQTz3EemzesxQwEQMaw" fontName="Noto Sans" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_uu5RQjz3EemzesxQwEQMaw"/>
+                </children>
+                <styles xmi:type="notation:SortingStyle" xmi:id="_tq-WIjz3EemzesxQwEQMaw"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_tq-WIzz3EemzesxQwEQMaw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_tq9vETz3EemzesxQwEQMaw" fontName="Noto Sans" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tq9vEjz3EemzesxQwEQMaw" x="234" y="265"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_ojzZFTzYEemzesxQwEQMaw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_ojzZFjzYEemzesxQwEQMaw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_ojzZETzYEemzesxQwEQMaw" fontName="Noto Sans" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ojzZEjzYEemzesxQwEQMaw" x="120" y="36" width="700" height="450"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_UI-s8jzTEemzesxQwEQMaw"/>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_ojpBADzYEemzesxQwEQMaw" name="AND Condition Group" width="70" height="45">
+      <target xmi:type="pacmanMetamodel:ConditionGroup" href="ghostApp.pacmanmetamodel#//@hasState.2/@hasTransition.0/@hasConditionGroup"/>
+      <semanticElements xmi:type="pacmanMetamodel:ConditionGroup" href="ghostApp.pacmanmetamodel#//@hasState.2/@hasTransition.0/@hasConditionGroup"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_ojpBATzYEemzesxQwEQMaw" showIcon="false" iconPath="/PacmanMetamodel.design/icons/ConditionGroups/digital-icon-25_2.png" borderSize="5" borderSizeComputationExpression="5" backgroundStyle="GradientTopToBottom" foregroundColor="194,239,255">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer/@containerMappings[name='ConditionGroup%20Container']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer/@containerMappings[name='ConditionGroup%20Container']"/>
+      <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_ojpBAjzYEemzesxQwEQMaw" name="DIST_TO_OPP   >=  5.0">
+        <target xmi:type="pacmanMetamodel:Condition" href="ghostApp.pacmanmetamodel#//@hasState.2/@hasTransition.0/@hasConditionGroup/@hasCondition.0"/>
+        <semanticElements xmi:type="pacmanMetamodel:Condition" href="ghostApp.pacmanmetamodel#//@hasState.2/@hasTransition.0/@hasConditionGroup/@hasCondition.0"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_7SE2EDzYEemzesxQwEQMaw" showIcon="false" iconPath="/PacmanMetamodel.design/icons/Condition/condition.png" borderSize="1" borderSizeComputationExpression="1" backgroundColor="255,245,181" foregroundColor="255,245,181">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer/@containerMappings[name='Condition']/@conditionnalStyles.0/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer/@containerMappings[name='Condition']"/>
+        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_ojpoEjzYEemzesxQwEQMaw" name="DIST_TO_OPP">
+          <target xmi:type="pacmanMetamodel:GameVariable" href="ghostApp.pacmanmetamodel#//@hasState.2/@hasTransition.0/@hasConditionGroup/@hasCondition.0/@hasOperand.0"/>
+          <semanticElements xmi:type="pacmanMetamodel:GameVariable" href="ghostApp.pacmanmetamodel#//@hasState.2/@hasTransition.0/@hasConditionGroup/@hasCondition.0/@hasOperand.0"/>
+          <ownedStyle xmi:type="diagram:Square" xmi:id="_ojpoEzzYEemzesxQwEQMaw" showIcon="false" labelPosition="node" color="173,127,168">
+            <description xmi:type="style:SquareDescription" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer/@nodeMappings[name='GameVariable']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer/@nodeMappings[name='GameVariable']"/>
+        </ownedElements>
+        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_ojpoFDzYEemzesxQwEQMaw" name="5.0">
+          <target xmi:type="pacmanMetamodel:Value" href="ghostApp.pacmanmetamodel#//@hasState.2/@hasTransition.0/@hasConditionGroup/@hasCondition.0/@hasOperand.1"/>
+          <semanticElements xmi:type="pacmanMetamodel:Value" href="ghostApp.pacmanmetamodel#//@hasState.2/@hasTransition.0/@hasConditionGroup/@hasCondition.0/@hasOperand.1"/>
+          <ownedStyle xmi:type="diagram:Square" xmi:id="_ojpoFTzYEemzesxQwEQMaw" showIcon="false" labelPosition="node" color="239,41,41">
+            <description xmi:type="style:SquareDescription" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer/@nodeMappings[name='Value']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer/@nodeMappings[name='Value']"/>
+        </ownedElements>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_ojpoEDzYEemzesxQwEQMaw" name="MY_BONUS  >=  OPP_BONUS">
+        <target xmi:type="pacmanMetamodel:Condition" href="ghostApp.pacmanmetamodel#//@hasState.2/@hasTransition.0/@hasConditionGroup/@hasCondition.1"/>
+        <semanticElements xmi:type="pacmanMetamodel:Condition" href="ghostApp.pacmanmetamodel#//@hasState.2/@hasTransition.0/@hasConditionGroup/@hasCondition.1"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_ojpoETzYEemzesxQwEQMaw" showIcon="false" iconPath="/PacmanMetamodel.design/icons/Condition/condition.png" borderSize="1" borderSizeComputationExpression="1" backgroundColor="255,245,181" foregroundColor="255,245,181">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer/@containerMappings[name='Condition']/@conditionnalStyles.2/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer/@containerMappings[name='Condition']"/>
+        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_ojpoFjzYEemzesxQwEQMaw" name="MY_BONUS">
+          <target xmi:type="pacmanMetamodel:GameVariable" href="ghostApp.pacmanmetamodel#//@hasState.2/@hasTransition.0/@hasConditionGroup/@hasCondition.1/@hasOperand.0"/>
+          <semanticElements xmi:type="pacmanMetamodel:GameVariable" href="ghostApp.pacmanmetamodel#//@hasState.2/@hasTransition.0/@hasConditionGroup/@hasCondition.1/@hasOperand.0"/>
+          <ownedStyle xmi:type="diagram:Square" xmi:id="_ojqPIDzYEemzesxQwEQMaw" showIcon="false" labelPosition="node" color="173,127,168">
+            <description xmi:type="style:SquareDescription" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer/@nodeMappings[name='GameVariable']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer/@nodeMappings[name='GameVariable']"/>
+        </ownedElements>
+        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_ojqPITzYEemzesxQwEQMaw" name="OPP_BONUS">
+          <target xmi:type="pacmanMetamodel:GameVariable" href="ghostApp.pacmanmetamodel#//@hasState.2/@hasTransition.0/@hasConditionGroup/@hasCondition.1/@hasOperand.1"/>
+          <semanticElements xmi:type="pacmanMetamodel:GameVariable" href="ghostApp.pacmanmetamodel#//@hasState.2/@hasTransition.0/@hasConditionGroup/@hasCondition.1/@hasOperand.1"/>
+          <ownedStyle xmi:type="diagram:Square" xmi:id="_ojqPIjzYEemzesxQwEQMaw" showIcon="false" labelPosition="node" color="173,127,168">
+            <description xmi:type="style:SquareDescription" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer/@nodeMappings[name='GameVariable']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer/@nodeMappings[name='GameVariable']"/>
+        </ownedElements>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_tq1MMDz3EemzesxQwEQMaw" name="UNTAKEN_BONUS   &lt;>  0.0">
+        <target xmi:type="pacmanMetamodel:Condition" href="ghostApp.pacmanmetamodel#//@hasState.2/@hasTransition.0/@hasConditionGroup/@hasCondition.2"/>
+        <semanticElements xmi:type="pacmanMetamodel:Condition" href="ghostApp.pacmanmetamodel#//@hasState.2/@hasTransition.0/@hasConditionGroup/@hasCondition.2"/>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_uuxVcDz3EemzesxQwEQMaw" showIcon="false" iconPath="/PacmanMetamodel.design/icons/Condition/condition.png" borderSize="1" borderSizeComputationExpression="1" backgroundColor="204,242,166" foregroundColor="204,242,166">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer/@containerMappings[name='Condition']/@conditionnalStyles.9/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer/@containerMappings[name='Condition']"/>
+        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_uXOYIDz3EemzesxQwEQMaw" name="UNTAKEN_BONUS">
+          <target xmi:type="pacmanMetamodel:GameVariable" href="ghostApp.pacmanmetamodel#//@hasState.2/@hasTransition.0/@hasConditionGroup/@hasCondition.2/@hasOperand.0"/>
+          <semanticElements xmi:type="pacmanMetamodel:GameVariable" href="ghostApp.pacmanmetamodel#//@hasState.2/@hasTransition.0/@hasConditionGroup/@hasCondition.2/@hasOperand.0"/>
+          <ownedStyle xmi:type="diagram:Square" xmi:id="_uXO_MDz3EemzesxQwEQMaw" showIcon="false" labelPosition="node" color="173,127,168">
+            <description xmi:type="style:SquareDescription" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer/@nodeMappings[name='GameVariable']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer/@nodeMappings[name='GameVariable']"/>
+        </ownedElements>
+        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_uuu5MDz3EemzesxQwEQMaw" name="0.0">
+          <target xmi:type="pacmanMetamodel:Value" href="ghostApp.pacmanmetamodel#//@hasState.2/@hasTransition.0/@hasConditionGroup/@hasCondition.2/@hasOperand.1"/>
+          <semanticElements xmi:type="pacmanMetamodel:Value" href="ghostApp.pacmanmetamodel#//@hasState.2/@hasTransition.0/@hasConditionGroup/@hasCondition.2/@hasOperand.1"/>
+          <ownedStyle xmi:type="diagram:Square" xmi:id="_uuvgQDz3EemzesxQwEQMaw" showIcon="false" labelPosition="node" color="239,41,41">
+            <description xmi:type="style:SquareDescription" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer/@nodeMappings[name='Value']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer/@nodeMappings[name='Value']"/>
+        </ownedElements>
+      </ownedDiagramElements>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_UI3YNDzTEemzesxQwEQMaw"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer"/>
+    <target xmi:type="pacmanMetamodel:Transition" href="ghostApp.pacmanmetamodel#//@hasState.2/@hasTransition.0"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram xmi:id="_62rs0DzTEemzesxQwEQMaw" name="Transition to Pacman stands still" uid="_62rFwDzTEemzesxQwEQMaw">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_62rs0TzTEemzesxQwEQMaw" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_62rs0jzTEemzesxQwEQMaw"/>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_62v-QDzTEemzesxQwEQMaw" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_62v-QTzTEemzesxQwEQMaw" type="Sirius" element="_62rs0DzTEemzesxQwEQMaw" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_I5KW0DzZEemzesxQwEQMaw" type="2002" element="_I45REDzZEemzesxQwEQMaw">
+          <children xmi:type="notation:Node" xmi:id="_I5KW0zzZEemzesxQwEQMaw" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_I5KW1DzZEemzesxQwEQMaw" type="7001">
+            <children xmi:type="notation:Node" xmi:id="_I5KW1zzZEemzesxQwEQMaw" type="3009" element="_I46fMDzZEemzesxQwEQMaw">
+              <children xmi:type="notation:Node" xmi:id="_I5K94DzZEemzesxQwEQMaw" type="5004"/>
+              <children xmi:type="notation:Node" xmi:id="_I5K94TzZEemzesxQwEQMaw" type="7003">
+                <children xmi:type="notation:Node" xmi:id="_I5K95DzZEemzesxQwEQMaw" type="3010" element="_I47GQTzZEemzesxQwEQMaw">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_I5K95TzZEemzesxQwEQMaw" fontName="Noto Sans" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_I5K95jzZEemzesxQwEQMaw"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_I5K95zzZEemzesxQwEQMaw" type="3010" element="_I47GQzzZEemzesxQwEQMaw">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_I5K96DzZEemzesxQwEQMaw" fontName="Noto Sans" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_I5K96TzZEemzesxQwEQMaw"/>
+                </children>
+                <styles xmi:type="notation:SortingStyle" xmi:id="_I5K94jzZEemzesxQwEQMaw"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_I5K94zzZEemzesxQwEQMaw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_I5KW2DzZEemzesxQwEQMaw" fontName="Noto Sans" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_I5KW2TzZEemzesxQwEQMaw" x="159" y="109"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_K8sU0DzZEemzesxQwEQMaw" type="3009" element="_K8drUDzZEemzesxQwEQMaw">
+              <children xmi:type="notation:Node" xmi:id="_K8sU0zzZEemzesxQwEQMaw" type="5004"/>
+              <children xmi:type="notation:Node" xmi:id="_K8sU1DzZEemzesxQwEQMaw" type="7003">
+                <children xmi:type="notation:Node" xmi:id="_LRmN0DzZEemzesxQwEQMaw" type="3010" element="_LRWWMDzZEemzesxQwEQMaw">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_LRmN0TzZEemzesxQwEQMaw" fontName="Noto Sans" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_LRmN0jzZEemzesxQwEQMaw"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_Lo_aIDzZEemzesxQwEQMaw" type="3010" element="_Lox-wDzZEemzesxQwEQMaw">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_Lo_aITzZEemzesxQwEQMaw" fontName="Noto Sans" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_Lo_aIjzZEemzesxQwEQMaw"/>
+                </children>
+                <styles xmi:type="notation:SortingStyle" xmi:id="_K8sU1TzZEemzesxQwEQMaw"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_K8sU1jzZEemzesxQwEQMaw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_K8sU0TzZEemzesxQwEQMaw" fontName="Noto Sans" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_K8sU0jzZEemzesxQwEQMaw" x="363" y="121" width="169" height="73"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_I5KW1TzZEemzesxQwEQMaw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_I5KW1jzZEemzesxQwEQMaw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_I5KW0TzZEemzesxQwEQMaw" fontName="Noto Sans" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_I5KW0jzZEemzesxQwEQMaw" x="228" y="48" width="700" height="450"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_62v-QjzTEemzesxQwEQMaw"/>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_I45REDzZEemzesxQwEQMaw" name="AND Condition Group" width="70" height="45">
+      <target xmi:type="pacmanMetamodel:ConditionGroup" href="ghostApp.pacmanmetamodel#//@hasState.2/@hasTransition.1/@hasConditionGroup"/>
+      <semanticElements xmi:type="pacmanMetamodel:ConditionGroup" href="ghostApp.pacmanmetamodel#//@hasState.2/@hasTransition.1/@hasConditionGroup"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_I45RETzZEemzesxQwEQMaw" showIcon="false" iconPath="/PacmanMetamodel.design/icons/ConditionGroups/digital-icon-25_2.png" borderSize="5" borderSizeComputationExpression="5" backgroundStyle="GradientTopToBottom" foregroundColor="194,239,255">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer/@containerMappings[name='ConditionGroup%20Container']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer/@containerMappings[name='ConditionGroup%20Container']"/>
+      <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_I46fMDzZEemzesxQwEQMaw" name="DIST_TO_OPP   &lt;  6.0">
+        <target xmi:type="pacmanMetamodel:Condition" href="ghostApp.pacmanmetamodel#//@hasState.2/@hasTransition.1/@hasConditionGroup/@hasCondition.0"/>
+        <semanticElements xmi:type="pacmanMetamodel:Condition" href="ghostApp.pacmanmetamodel#//@hasState.2/@hasTransition.1/@hasConditionGroup/@hasCondition.0"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_I47GQDzZEemzesxQwEQMaw" showIcon="false" iconPath="/PacmanMetamodel.design/icons/Condition/condition.png" borderSize="1" borderSizeComputationExpression="1" backgroundColor="217,196,215" foregroundColor="217,196,215">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer/@containerMappings[name='Condition']/@conditionnalStyles.15/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer/@containerMappings[name='Condition']"/>
+        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_I47GQTzZEemzesxQwEQMaw" name="DIST_TO_OPP">
+          <target xmi:type="pacmanMetamodel:GameVariable" href="ghostApp.pacmanmetamodel#//@hasState.2/@hasTransition.1/@hasConditionGroup/@hasCondition.0/@hasOperand.0"/>
+          <semanticElements xmi:type="pacmanMetamodel:GameVariable" href="ghostApp.pacmanmetamodel#//@hasState.2/@hasTransition.1/@hasConditionGroup/@hasCondition.0/@hasOperand.0"/>
+          <ownedStyle xmi:type="diagram:Square" xmi:id="_I47GQjzZEemzesxQwEQMaw" showIcon="false" labelPosition="node" color="173,127,168">
+            <description xmi:type="style:SquareDescription" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer/@nodeMappings[name='GameVariable']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer/@nodeMappings[name='GameVariable']"/>
+        </ownedElements>
+        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_I47GQzzZEemzesxQwEQMaw" name="6.0">
+          <target xmi:type="pacmanMetamodel:Value" href="ghostApp.pacmanmetamodel#//@hasState.2/@hasTransition.1/@hasConditionGroup/@hasCondition.0/@hasOperand.1"/>
+          <semanticElements xmi:type="pacmanMetamodel:Value" href="ghostApp.pacmanmetamodel#//@hasState.2/@hasTransition.1/@hasConditionGroup/@hasCondition.0/@hasOperand.1"/>
+          <ownedStyle xmi:type="diagram:Square" xmi:id="_I47GRDzZEemzesxQwEQMaw" showIcon="false" labelPosition="node" color="239,41,41">
+            <description xmi:type="style:SquareDescription" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer/@nodeMappings[name='Value']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer/@nodeMappings[name='Value']"/>
+        </ownedElements>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_K8drUDzZEemzesxQwEQMaw" name="DIST_TO_OPP   &lt;=  6.0">
+        <target xmi:type="pacmanMetamodel:Condition" href="ghostApp.pacmanmetamodel#//@hasState.2/@hasTransition.1/@hasConditionGroup/@hasCondition.1"/>
+        <semanticElements xmi:type="pacmanMetamodel:Condition" href="ghostApp.pacmanmetamodel#//@hasState.2/@hasTransition.1/@hasConditionGroup/@hasCondition.1"/>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_Lo4FYDzZEemzesxQwEQMaw" showIcon="false" iconPath="/PacmanMetamodel.design/icons/Condition/condition.png" borderSize="1" borderSizeComputationExpression="1" backgroundColor="217,196,215" foregroundColor="217,196,215">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer/@containerMappings[name='Condition']/@conditionnalStyles.6/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer/@containerMappings[name='Condition']"/>
+        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_LRWWMDzZEemzesxQwEQMaw" name="DIST_TO_OPP">
+          <target xmi:type="pacmanMetamodel:GameVariable" href="ghostApp.pacmanmetamodel#//@hasState.2/@hasTransition.1/@hasConditionGroup/@hasCondition.1/@hasOperand.0"/>
+          <semanticElements xmi:type="pacmanMetamodel:GameVariable" href="ghostApp.pacmanmetamodel#//@hasState.2/@hasTransition.1/@hasConditionGroup/@hasCondition.1/@hasOperand.0"/>
+          <ownedStyle xmi:type="diagram:Square" xmi:id="_LRW9QDzZEemzesxQwEQMaw" showIcon="false" labelPosition="node" color="173,127,168">
+            <description xmi:type="style:SquareDescription" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer/@nodeMappings[name='GameVariable']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer/@nodeMappings[name='GameVariable']"/>
+        </ownedElements>
+        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_Lox-wDzZEemzesxQwEQMaw" name="6.0">
+          <target xmi:type="pacmanMetamodel:Value" href="ghostApp.pacmanmetamodel#//@hasState.2/@hasTransition.1/@hasConditionGroup/@hasCondition.1/@hasOperand.1"/>
+          <semanticElements xmi:type="pacmanMetamodel:Value" href="ghostApp.pacmanmetamodel#//@hasState.2/@hasTransition.1/@hasConditionGroup/@hasCondition.1/@hasOperand.1"/>
+          <ownedStyle xmi:type="diagram:Square" xmi:id="_Lox-wTzZEemzesxQwEQMaw" showIcon="false" labelPosition="node" color="239,41,41">
+            <description xmi:type="style:SquareDescription" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer/@nodeMappings[name='Value']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer/@nodeMappings[name='Value']"/>
+        </ownedElements>
+      </ownedDiagramElements>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_62rs1DzTEemzesxQwEQMaw"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer"/>
+    <target xmi:type="pacmanMetamodel:Transition" href="ghostApp.pacmanmetamodel#//@hasState.2/@hasTransition.1"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram xmi:id="_CdJLEDzYEemzesxQwEQMaw" name="Transition to Capture Pacman 1" uid="_CdHV4DzYEemzesxQwEQMaw">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_CdJLETzYEemzesxQwEQMaw" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_CdJLEjzYEemzesxQwEQMaw"/>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_CdYboDzYEemzesxQwEQMaw" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_CdYboTzYEemzesxQwEQMaw" type="Sirius" element="_CdJLEDzYEemzesxQwEQMaw" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="__6WZADzpEemzesxQwEQMaw" type="2002" element="__6QSYDzpEemzesxQwEQMaw">
+          <children xmi:type="notation:Node" xmi:id="__6WZAzzpEemzesxQwEQMaw" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="__6WZBDzpEemzesxQwEQMaw" type="7001">
+            <children xmi:type="notation:Node" xmi:id="_A09nIDzqEemzesxQwEQMaw" type="3009" element="_A07K4DzqEemzesxQwEQMaw">
+              <children xmi:type="notation:Node" xmi:id="_A09nIzzqEemzesxQwEQMaw" type="5004"/>
+              <children xmi:type="notation:Node" xmi:id="_A09nJDzqEemzesxQwEQMaw" type="7003">
+                <children xmi:type="notation:Node" xmi:id="_A09nJzzqEemzesxQwEQMaw" type="3010" element="_A07x8DzqEemzesxQwEQMaw">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_A0-OMDzqEemzesxQwEQMaw" fontName="Noto Sans" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_A0-OMTzqEemzesxQwEQMaw"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_A0-OMjzqEemzesxQwEQMaw" type="3010" element="_A07x8jzqEemzesxQwEQMaw">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_A0-OMzzqEemzesxQwEQMaw" fontName="Noto Sans" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_A0-ONDzqEemzesxQwEQMaw"/>
+                </children>
+                <styles xmi:type="notation:SortingStyle" xmi:id="_A09nJTzqEemzesxQwEQMaw"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_A09nJjzqEemzesxQwEQMaw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_A09nITzqEemzesxQwEQMaw" fontName="Noto Sans" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_A09nIjzqEemzesxQwEQMaw" x="115" y="93"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_BvTvgDzqEemzesxQwEQMaw" type="3009" element="_BvNo4DzqEemzesxQwEQMaw">
+              <children xmi:type="notation:Node" xmi:id="_BvTvgzzqEemzesxQwEQMaw" type="5004"/>
+              <children xmi:type="notation:Node" xmi:id="_BvTvhDzqEemzesxQwEQMaw" type="7003">
+                <children xmi:type="notation:Node" xmi:id="_CIVTgDzqEemzesxQwEQMaw" type="3010" element="_CIN-wDzqEemzesxQwEQMaw">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_CIVTgTzqEemzesxQwEQMaw" fontName="Noto Sans" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_CIVTgjzqEemzesxQwEQMaw"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_C5wJYDzqEemzesxQwEQMaw" type="3010" element="_C5qp0DzqEemzesxQwEQMaw">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_C5wJYTzqEemzesxQwEQMaw" fontName="Noto Sans" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_C5wJYjzqEemzesxQwEQMaw"/>
+                </children>
+                <styles xmi:type="notation:SortingStyle" xmi:id="_BvTvhTzqEemzesxQwEQMaw"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_BvTvhjzqEemzesxQwEQMaw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_BvTvgTzqEemzesxQwEQMaw" fontName="Noto Sans" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BvTvgjzqEemzesxQwEQMaw" x="399" y="100"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="__6WZBTzpEemzesxQwEQMaw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="__6WZBjzpEemzesxQwEQMaw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="__6WZATzpEemzesxQwEQMaw" fontName="Noto Sans" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="__6WZAjzpEemzesxQwEQMaw" x="384" y="-48" width="700" height="450"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_CdYbojzYEemzesxQwEQMaw"/>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="__6QSYDzpEemzesxQwEQMaw" name="OR Condition Group" width="70" height="45">
+      <target xmi:type="pacmanMetamodel:ConditionGroup" href="ghostApp.pacmanmetamodel#//@hasState.4/@hasTransition.0/@hasConditionGroup"/>
+      <semanticElements xmi:type="pacmanMetamodel:ConditionGroup" href="ghostApp.pacmanmetamodel#//@hasState.4/@hasTransition.0/@hasConditionGroup"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="__6QSYTzpEemzesxQwEQMaw" showIcon="false" iconPath="/PacmanMetamodel.design/icons/ConditionGroups/digital-icon-25_2.png" borderSize="5" borderSizeComputationExpression="5" backgroundStyle="GradientTopToBottom" foregroundColor="194,239,255">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer/@containerMappings[name='ConditionGroup%20Container']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer/@containerMappings[name='ConditionGroup%20Container']"/>
+      <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_A07K4DzqEemzesxQwEQMaw" name="DIST_TO_OPP   &lt;=  4.0">
+        <target xmi:type="pacmanMetamodel:Condition" href="ghostApp.pacmanmetamodel#//@hasState.4/@hasTransition.0/@hasConditionGroup/@hasCondition.0"/>
+        <semanticElements xmi:type="pacmanMetamodel:Condition" href="ghostApp.pacmanmetamodel#//@hasState.4/@hasTransition.0/@hasConditionGroup/@hasCondition.0"/>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_A07K4TzqEemzesxQwEQMaw" showIcon="false" iconPath="/PacmanMetamodel.design/icons/Condition/condition.png" borderSize="1" borderSizeComputationExpression="1" backgroundColor="217,196,215" foregroundColor="217,196,215">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer/@containerMappings[name='Condition']/@conditionnalStyles.6/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer/@containerMappings[name='Condition']"/>
+        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_A07x8DzqEemzesxQwEQMaw" name="DIST_TO_OPP">
+          <target xmi:type="pacmanMetamodel:GameVariable" href="ghostApp.pacmanmetamodel#//@hasState.4/@hasTransition.0/@hasConditionGroup/@hasCondition.0/@hasOperand.0"/>
+          <semanticElements xmi:type="pacmanMetamodel:GameVariable" href="ghostApp.pacmanmetamodel#//@hasState.4/@hasTransition.0/@hasConditionGroup/@hasCondition.0/@hasOperand.0"/>
+          <ownedStyle xmi:type="diagram:Square" xmi:id="_A07x8TzqEemzesxQwEQMaw" showIcon="false" labelPosition="node" color="173,127,168">
+            <description xmi:type="style:SquareDescription" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer/@nodeMappings[name='GameVariable']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer/@nodeMappings[name='GameVariable']"/>
+        </ownedElements>
+        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_A07x8jzqEemzesxQwEQMaw" name="4.0">
+          <target xmi:type="pacmanMetamodel:Value" href="ghostApp.pacmanmetamodel#//@hasState.4/@hasTransition.0/@hasConditionGroup/@hasCondition.0/@hasOperand.1"/>
+          <semanticElements xmi:type="pacmanMetamodel:Value" href="ghostApp.pacmanmetamodel#//@hasState.4/@hasTransition.0/@hasConditionGroup/@hasCondition.0/@hasOperand.1"/>
+          <ownedStyle xmi:type="diagram:Square" xmi:id="_A07x8zzqEemzesxQwEQMaw" showIcon="false" labelPosition="node" color="239,41,41">
+            <description xmi:type="style:SquareDescription" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer/@nodeMappings[name='Value']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer/@nodeMappings[name='Value']"/>
+        </ownedElements>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_BvNo4DzqEemzesxQwEQMaw" name="UNTAKEN_BONUS   =  0.0">
+        <target xmi:type="pacmanMetamodel:Condition" href="ghostApp.pacmanmetamodel#//@hasState.4/@hasTransition.0/@hasConditionGroup/@hasCondition.1"/>
+        <semanticElements xmi:type="pacmanMetamodel:Condition" href="ghostApp.pacmanmetamodel#//@hasState.4/@hasTransition.0/@hasConditionGroup/@hasCondition.1"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_C5viUDzqEemzesxQwEQMaw" showIcon="false" iconPath="/PacmanMetamodel.design/icons/Condition/condition.png" borderSize="1" borderSizeComputationExpression="1" backgroundColor="204,242,166" foregroundColor="204,242,166">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer/@containerMappings[name='Condition']/@conditionnalStyles.3/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer/@containerMappings[name='Condition']"/>
+        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_CIN-wDzqEemzesxQwEQMaw" name="UNTAKEN_BONUS">
+          <target xmi:type="pacmanMetamodel:GameVariable" href="ghostApp.pacmanmetamodel#//@hasState.4/@hasTransition.0/@hasConditionGroup/@hasCondition.1/@hasOperand.0"/>
+          <semanticElements xmi:type="pacmanMetamodel:GameVariable" href="ghostApp.pacmanmetamodel#//@hasState.4/@hasTransition.0/@hasConditionGroup/@hasCondition.1/@hasOperand.0"/>
+          <ownedStyle xmi:type="diagram:Square" xmi:id="_CIN-wTzqEemzesxQwEQMaw" showIcon="false" labelPosition="node" color="173,127,168">
+            <description xmi:type="style:SquareDescription" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer/@nodeMappings[name='GameVariable']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer/@nodeMappings[name='GameVariable']"/>
+        </ownedElements>
+        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_C5qp0DzqEemzesxQwEQMaw" name="0.0">
+          <target xmi:type="pacmanMetamodel:Value" href="ghostApp.pacmanmetamodel#//@hasState.4/@hasTransition.0/@hasConditionGroup/@hasCondition.1/@hasOperand.1"/>
+          <semanticElements xmi:type="pacmanMetamodel:Value" href="ghostApp.pacmanmetamodel#//@hasState.4/@hasTransition.0/@hasConditionGroup/@hasCondition.1/@hasOperand.1"/>
+          <ownedStyle xmi:type="diagram:Square" xmi:id="_C5qp0TzqEemzesxQwEQMaw" showIcon="false" labelPosition="node" color="239,41,41">
+            <description xmi:type="style:SquareDescription" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer/@nodeMappings[name='Value']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer/@nodeMappings[name='Value']"/>
+        </ownedElements>
+      </ownedDiagramElements>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_CdJLFDzYEemzesxQwEQMaw"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/GhostMetamodel.design/description/GhostMetamodel.odesign#//@ownedViewpoints[name='ghostApp']/@ownedRepresentations[name='ManageTransition']/@defaultLayer"/>
+    <target xmi:type="pacmanMetamodel:Transition" href="ghostApp.pacmanmetamodel#//@hasState.4/@hasTransition.0"/>
+  </diagram:DSemanticDiagram>
+</xmi:XMI>
