@@ -8,6 +8,4 @@ http://www.sfhmmy.gr/en/home
 Create a pacman and a ghost app to compete with other students on a rework of the classic pacman game. This rework has been created and given to us by Computer Science students of the Aristotle University of Thessaloniki.
 
 ### Our Team
-The ROBers
-From University of Patras
-Here is the code our team created to represent the pacman and the ghost.
+The ROBers - From University of Patras - Here is the code our team created to represent the pacman and the ghost.
